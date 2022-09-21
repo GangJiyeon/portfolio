@@ -1,0 +1,2552 @@
+<!DOCTYPE html>
+<html lang="ko" class="day sysui page-cover-support altcover-support alt3 altcover-only show-comments gh-top hide-sidebar hide-blog-info theme-color deptheffect">
+<head>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/lib/lightbox/css/lightbox.min.css" /><link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/style/content/font.css?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114" /><link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/style/content/content.css?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114" /><!--[if lt IE 9]><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script><![endif]--><!--[if gte IE 9]>
+<!--><script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><!--<![endif]-->
+<script src="//t1.daumcdn.net/tistory_admin/lib/lightbox/js/lightbox.min.js"></script>
+<script>
+lightbox.options.fadeDuration = 200;
+lightbox.options.resizeDuration = 200;
+lightbox.options.wrapAround = false;
+lightbox.options.albumLabel = "%1 / %2";
+</script>
+<script>var tjQuery = jQuery.noConflict(true);</script><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><meta name="referrer" content="always"><link rel="icon" href="https://tistory4.daumcdn.net/tistory/3895287/da2946be1cb348e295a33b4a56186950" /><link rel="apple-touch-icon" href="//img1.daumcdn.net/thumb/C180x180/?fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F3895287%2Fattach%2F874a602c1a0a4951bd78d6b01dc25c54">
+<link rel="apple-touch-icon" sizes="76x76" href="//img1.daumcdn.net/thumb/C76x76/?fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F3895287%2Fattach%2F874a602c1a0a4951bd78d6b01dc25c54">
+<link rel="apple-touch-icon" sizes="120x120" href="//img1.daumcdn.net/thumb/C120x120/?fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F3895287%2Fattach%2F874a602c1a0a4951bd78d6b01dc25c54">
+<link rel="apple-touch-icon" sizes="152x152" href="//img1.daumcdn.net/thumb/C152x152/?fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F3895287%2Fattach%2F874a602c1a0a4951bd78d6b01dc25c54">
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338">
+<meta name="google-adsense-platform-domain" content="tistory.com">
+<meta name="description" content="공부목적으로 다른 블로그의 글을 그대로 따라치면서 작성되었습니다. 저작권 문제 시, 비공개 처리하겠습니다  스프링 프레임워크란 - 자바 엔터프라이즈 개발을 편하게 해주는 경량급 오픈소스 애플리케이션 프..">
+
+<!-- BEGIN OPENGRAPH -->
+<link rel="canonical" href="https://theheydaze.tistory.com/628" /><meta property="og:type" content="article"><meta property="og:url" content="https://theheydaze.tistory.com/628" ><meta property="og:article:author" content="THE HEYDAZE" ><meta property="og:site_name" content="나눔코딩" ><meta property="og:title" content="01. 기술면접 - 스프링 - 스프링 프레임워크" ><meta name="by" content="THE HEYDAZE" ><meta property="og:description" content="공부목적으로 다른 블로그의 글을 그대로 따라치면서 작성되었습니다. 저작권 문제 시, 비공개 처리하겠습니다  스프링 프레임워크란 - 자바 엔터프라이즈 개발을 편하게 해주는 경량급 오픈소스 애플리케이션 프.." ><meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcDTS1u%2FbtriGWeVgeI%2FNQiyLuITq8DMiycWdCfmv1%2Fimg.png" >
+<!-- END OPENGRAPH -->
+
+
+
+<!-- BEGIN TWITTERCARD -->
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@TISTORY"><meta name="twitter:title" content="01. 기술면접 - 스프링 - 스프링 프레임워크" ><meta name="twitter:description" content="공부목적으로 다른 블로그의 글을 그대로 따라치면서 작성되었습니다. 저작권 문제 시, 비공개 처리하겠습니다  스프링 프레임워크란 - 자바 엔터프라이즈 개발을 편하게 해주는 경량급 오픈소스 애플리케이션 프.." ><meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcDTS1u%2FbtriGWeVgeI%2FNQiyLuITq8DMiycWdCfmv1%2Fimg.png" >
+<!-- END TWITTERCARD -->
+
+
+
+<!-- BEGIN DAUMAPP -->
+<meta property="dg:plink" content="https://theheydaze.tistory.com/628" ><meta name="plink" content="https://theheydaze.tistory.com/628" ><meta name="title" content="01. 기술면접 - 스프링 - 스프링 프레임워크" ><meta name="article:media_name" content="나눔코딩" ><meta property="article:mobile_url" content="https://theheydaze.tistory.com/m/628" ><meta property="article:pc_url" content="https://theheydaze.tistory.com/628" ><meta property="article:mobile_view_url" content="https://theheydaze.tistory.com/m/628" ><meta property="article:pc_view_url" content="https://theheydaze.tistory.com/628" ><meta property="article:talk_channel_view_url" content="https://theheydaze.tistory.com/m/628" ><meta property="article:pc_service_home" content="https://www.tistory.com" ><meta property="article:mobile_service_home" content="https://www.tistory.com/m" ><meta property="article:txid" content="3895287_628" /><meta property="article:published_time" content="2021-10-25T10:43:30+09:00" ><meta property="og:regDate" content="20211025104330" ><meta property="article:modified_time" content="2021-10-26T09:57:45+09:00" >
+<!-- END DAUMAPP -->
+
+
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https:\/\/theheydaze.tistory.com\/628"},"url":"https:\/\/theheydaze.tistory.com\/628","headline":"01. \uae30\uc220\uba74\uc811 - \uc2a4\ud504\ub9c1 - \uc2a4\ud504\ub9c1 \ud504\ub808\uc784\uc6cc\ud06c","description":"\uacf5\ubd80\ubaa9\uc801\uc73c\ub85c \ub2e4\ub978 \ube14\ub85c\uadf8\uc758 \uae00\uc744 \uadf8\ub300\ub85c \ub530\ub77c\uce58\uba74\uc11c \uc791\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc800\uc791\uad8c \ubb38\uc81c \uc2dc, \ube44\uacf5\uac1c \ucc98\ub9ac\ud558\uaca0\uc2b5\ub2c8\ub2e4  \uc2a4\ud504\ub9c1 \ud504\ub808\uc784\uc6cc\ud06c\ub780 - \uc790\ubc14 \uc5d4\ud130\ud504\ub77c\uc774\uc988 \uac1c\ubc1c\uc744 \ud3b8\ud558\uac8c \ud574\uc8fc\ub294 \uacbd\ub7c9\uae09 \uc624\ud508\uc18c\uc2a4 \uc560\ud50c\ub9ac\ucf00\uc774\uc158 \ud504..","author":{"@type":"Person","name":"THE HEYDAZE"},"image":{"@type":"ImageObject","url":"https:\/\/img1.daumcdn.net\/thumb\/R800x0\/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcDTS1u%2FbtriGWeVgeI%2FNQiyLuITq8DMiycWdCfmv1%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20211025T10:43:30+09:00","dateModified":"20211026T09:57:45+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https:\/\/t1.daumcdn.net\/tistory_admin\/static\/images\/openGraph\/opengraph.png","width":"800px","height":"800px"}}}</script><meta name="robots" content="max-image-preview:large">
+<!-- END STRUCTURED_DATA -->
+
+
+<!-- Version 11.4.2 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"><title>01. 기술면접 - 스프링 - 스프링 프레임워크</title>
+<link rel="alternate" type="application/rss+xml" title="나눔코딩" href="https://theheydaze.tistory.com/rss">
+<script src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script_polyfills.js"></script>
+<script>let
+$themeColor="TRANSPARENT",$themeColorOrig=$themeColor.toLowerCase(),$date=new Date();if(document.querySelectorAll("html.dynamic").length>0){const $html=document.getElementsByTagName("html")[0];if($date.getHours()<6||$date.getHours()>18){$html.classList.add("night");}
+else if($date.getHours()==6||$date.getHours()==7||$date.getHours()==17||$date.getHours()==18){$html.classList.add("dawn");}
+else{$html.classList.add("day");};};if($themeColor.toLowerCase()=="transparent"){if(document.querySelectorAll("html.day:not(.sysui)").length>0){$themeColor="#f4f4f4";}
+else if(document.querySelectorAll("html.dawn").length>0){$themeColor="#d9d0c3";}
+else if(document.querySelectorAll("html.night").length>0){$themeColor="#0e0e0e";};if(document.querySelectorAll("html:not(.sysui)").length>0){let theme=document.createElement("meta");theme.name="theme-color";theme.content=$themeColor;document.head.appendChild(theme);};}
+else{let theme=document.createElement("meta");theme.name="theme-color";theme.content=$themeColor;document.head.appendChild(theme);};</script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/style_base.css">
+<link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/3895287/skin/style.css?_T_=1631150181">
+<style>.page-limit-width{max-width:1980px!important}@media(min-width:1100px){html:not(.fixed-sidebar) .page-limit-width{width:1980px;max-width:970px!important}}@media(min-width:1380px){html.fixed-sidebar .page-limit-width{width:1980px;max-width:970px!important}}</style>
+<!-- 커스텀 -->
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+	<!-- 스크롤 -->
+	
+	<!-- 폰트 어썸 -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<style type="text/css">
+		#daumSearchBox {
+			height: 21px;
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+			margin: 5px auto ;
+			padding: 0;
+		}
+		#daumSearchBox input {
+			background: none;
+			margin : 0;
+			padding : 0;
+			border : 0;
+		}
+		#daumSearchBox #daumLogo {
+			width: 34px;
+			height: 21px;
+			float: left;
+			margin-right: 5px;
+			background-image : url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+		}
+		#daumSearchBox #show_q {
+			background-color: transparent;
+			border: none;
+			font: 12px Gulim, Sans-serif;
+			color: #555;
+			margin-top: 4px;
+			margin-right: 15px;
+			float: left;
+		}
+
+		#daumSearchBox #show_btn {
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+			width: 37px;
+			height: 21px;
+			float: left;
+			margin:0;
+			cursor:pointer;
+			text-indent:-1000em;
+		}
+	</style>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/plugins/TistoryProfileLayer/style.css?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114" />
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/plugins/TistoryProfileLayer/profile.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114"></script>
+	<style type="text/css">
+		.another_category { border: 1px solid #E5E5E5; padding: 10px 10px 5px; margin:10px 0; clear: both; }
+		.another_category h4 { font-size: 12px !important; margin: 0 !important; border-bottom: 1px solid #E5E5E5 !important; padding: 2px 0 6px !important; }
+		.another_category h4 a { font-weight: bold !important; }
+		.another_category table { table-layout: fixed; border-collapse: collapse; width: 100% !important; margin-top: 10px !important; }
+		* html .another_category table { width: auto !important; }
+		*:first-child+html .another_category table { width: auto !important; }
+		.another_category th, .another_category td { padding: 0 0 4px !important; }
+		.another_category th { text-align: left; font-size: 12px !important; font-weight: normal;  word-break: break-all; overflow: hidden; line-height: 1.5; }
+		.another_category td { text-align: right; width: 80px; font-size: 11px; }
+		.another_category th a { font-weight: normal; text-decoration: none; border: none !important; }
+		.another_category th a.current{ font-weight: bold; text-decoration: none !important; border-bottom: 1px solid !important; }
+		.another_category th span { font-weight: normal; text-decoration: none; font: 10px Tahoma, Sans-serif; border: none !important; }
+
+		.another_category_color_gray, .another_category_color_gray h4 { border-color: #E5E5E5 !important; }
+		.another_category_color_gray * { color: #909090 !important; }
+		.another_category_color_gray th a.current{border-color:#909090 !important;}
+		.another_category_color_gray h4, .another_category_color_gray h4 a { color: #737373 !important; }
+
+
+		.another_category_color_red, .another_category_color_red h4 { border-color: #F6D4D3 !important;  }
+		.another_category_color_red * { color: #E86869 !important; }
+		.another_category_color_red th a.current{border-color:#E86869 !important;}
+		.another_category_color_red h4, .another_category_color_red h4 a { color: #ED0908 !important; }
+
+
+		.another_category_color_green, .another_category_color_green h4 { border-color: #CCE7C8 !important; }
+		.another_category_color_green * { color: #64C05B !important; }
+		.another_category_color_green th a.current{border-color:#64C05B !important;}
+		.another_category_color_green h4, .another_category_color_green h4 a { color: #3EA731 !important; }
+
+
+		.another_category_color_blue, .another_category_color_blue h4 { border-color: #C8DAF2 !important; }
+		.another_category_color_blue * { color: #477FD6 !important; }
+		.another_category_color_blue th a.current{border-color:#477FD6 !important;}
+		.another_category_color_blue h4, .another_category_color_blue h4 a { color: #1960CA !important; }
+
+
+		.another_category_color_violet, .another_category_color_violet h4 { border-color: #E1CEEC !important;  }
+		.another_category_color_violet * { color:#9D64C5 !important; }
+		.another_category_color_violet th a.current{border-color:#9D64C5 !important;}
+		.another_category_color_violet h4, .another_category_color_violet h4 a { color: #7E2CB5 !important; }
+	</style>
+<script type="text/javascript">
+        
+        window.TistoryBlog = {
+            basePath: "",
+            url: "https://theheydaze.tistory.com",
+            tistoryUrl: "https://theheydaze.tistory.com",
+			manageUrl: 'https://theheydaze.tistory.com/manage',
+            token: 'DCLz3xrjFXabK6+6Kb4MmA=='
+        };
+        var servicePath = "";
+        var blogURL = "";
+    </script>
+
+	<script> (function() { window.orgjQuery = window.jQuery; window.jQuery = tjQuery })()</script>
+    <script type="text/javascript" defer src=https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/script/reaction/reaction-button-container.min.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114></script>
+    <script> (function() { window.jQuery = window.orgjQuery; delete window.orgjQuery })()</script>
+        <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/script/_/base.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114"></script>
+        <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/style/dialog.css?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114"/>
+            <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/tistory_admin/www/style/top/font.css">
+    <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/style/postBtn.css?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114"/>
+        <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/style/component/tistory.css?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114" />
+    <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/script/component/tistory.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114"></script>
+        <script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js"></script></head>
+<body id="tt-body-page">
+<script type="text/javascript">
+	(function() {
+		if (!window.T) {
+			window.T = {}
+		}
+		window.T.config = {"TOP_SSL_URL":"https:\/\/www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"\/629","NEXT_PAGE":"\/626","BLOG":{"isDormancy":false,"title":"\ub098\ub214\ucf54\ub529"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https:\/\/www.tistory.com\/auth\/login\/?redirectUrl=http%3A%2F%2Ftheheydaze.tistory.com%2F628","DEFAULT_URL":"https:\/\/theheydaze.tistory.com","USER":{"name":null,"homepage":null},"ROLE_GROUP":"visitor","SUBSCRIPTION":{"status":"none","isConnected":false,"isProcessing":false,"isPending":false,"isWait":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"TOP_URL":"https:\/\/www.tistory.com","JOIN_URL":"https:\/\/www.tistory.com\/member\/join"};
+		window.appInfo = {"domain":"tistory.com","topUrl":"https:\/\/www.tistory.com","loginUrl":"https:\/\/www.tistory.com\/auth\/login","logoutUrl":"https:\/\/www.tistory.com\/auth\/logout"};
+
+        window.initData = {};
+        
+	})();
+</script>
+
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/script/blog/common.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114"></script>
+<div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
+<div id="measuring" hidden aria-hidden="true">
+<div class="measuring"><div></div></div>
+</div>
+<div id="gpu-support" hidden aria-hidden="true">
+<div class="gpu-support sidebar-support"></div>
+<div class="gpu-support blog-info-support"></div>
+</div>
+<nav class="scrollbar-support" id="global-navigation">
+<div class="notice-go-to-index" hidden aria-hidden="true">
+<span class="icon">이 영역을 누르면 첫 페이지로 이동</span>
+</div>
+<div class="gnb-inner">
+<a class="go-to-index no-text" href="/" role="button" aria-hidden="false">나눔코딩 블로그의 첫 페이지로 이동</a>
+<div class="go-to-index-visual" aria-hidden="true">
+<div class="gnb-title">
+<p aria-hidden="true">나눔코딩</p>
+
+</div>
+</div>
+<div class="gnb-left">
+<ul class="fc-list">
+<li><button class="fc-icon fc-appearance fc-button open-sidebar" data-func="open-sidebar">사이드바 열기</button></li>
+</ul>
+</div>
+<div class="gnb-center">
+<div class="gnb-title">
+<a class="gnb-blog-link no-text fc-button" href="javascript:" data-func="go-to-top" role="button">페이지 맨 위로 올라가기</a>
+<p aria-hidden="true">나눔코딩</p>
+<span aria-hidden="true"></span>
+
+</div>
+</div>
+<div class="gnb-right">
+<div class="github">
+<a target="blank" href="https://github.com/sout1217/" class="fab fa-github"></a></div>
+<button class="no-text fc-button fc-appearance blogger-toggle" data-func="open-blog-info">THE HEYDAZE 블로그 정보 보기</button>
+<div class="gnb-blogger-icon" data-style="background-image:url(//img1.daumcdn.net/thumb/R150x0/?fname=https://tistory1.daumcdn.net/tistory/3895287/attach/874a602c1a0a4951bd78d6b01dc25c54)" aria-hidden="true"></div>
+
+</div>
+			<div style="position:absoult;top:40px;" class=".custom_scroll"></div>
+</div>
+	
+
+</nav>
+	
+<main class="scrollbar-support" id="wrap" aria-hidden="false">
+
+<section>
+
+
+<div class="fc-index-width card-type">
+<div class="index-width-support">
+
+
+
+
+
+
+<article>
+<header id="global-header">
+
+<div class="page-cover" aria-hidden="true">
+<div class="base-page-cover"></div>
+<div class="parent-page-cover">
+<div class="small-cover"></div>
+<div class="medium-cover"></div>
+<div class="large-cover"></div>
+<div class="exlarge-cover"></div>
+</div>
+</div>
+
+<div class="gh-text">
+<h1 class="gh-headline">01. 기술면접 - 스프링 - 스프링 프레임워크</h1>
+<ul class="fc-list">
+<li class="digit" role="text" aria-label="2021년 10월 25일 10시 43분에 작성된 글."><time datetime="2021-10-25T10:43">2021.10.25 10:43</time></li>
+<li><a class="fade-link" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/9.%20%EC%8A%A4%ED%94%84%EB%A7%81" aria-label="∞. 기술 면접/9. 스프링">∞. 기술 면접/9. 스프링</a></li>
+</ul>
+</div>
+
+<div class="header-height" aria-hidden="true"></div>
+</header>
+<div class="page-limit-width expand-support edge-support procode hljs-line hljs-overflow fc" id="article">
+
+<div class="contents_style"><blockquote data-ke-style="style2">공부목적으로 다른 블로그의 글을 그대로 따라치면서 작성되었습니다. 저작권 문제 시, 비공개 처리하겠습니다</blockquote>
+<p><figure class='imageblock alignCenter' data-origin-width="452" data-origin-height="452" data-filename="spring-logo.png" data-ke-mobilestyle="widthOrigin"><span data-url='https://blog.kakaocdn.net/dn/cDTS1u/btriGWeVgeI/NQiyLuITq8DMiycWdCfmv1/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/cDTS1u/btriGWeVgeI/NQiyLuITq8DMiycWdCfmv1/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcDTS1u%2FbtriGWeVgeI%2FNQiyLuITq8DMiycWdCfmv1%2Fimg.png' data-origin-width="452" data-origin-height="452" data-filename="spring-logo.png" data-ke-mobilestyle="widthOrigin"></span></figure></p>
+<blockquote data-ke-style="style3"><b>스프링 프레임워크란</b></blockquote>
+<p data-ke-size="size16">- <span style="background-color: #f6e199;">자바 엔터프라이즈 개발을 편하게 해주는 경량급 오픈소스 애플리케이션 프레임워크</span><br />- Lightweight Java Application Framework<br />&nbsp; &nbsp; - 목표: <a href="https://siyoon210.tistory.com/120" target="_blank" rel="noopener"><span style="background-color: #e6f5ff;">POJO 기반</span></a>의 Enterprise Application 개발을 쉽고 편하게 할 수 있도록 한다<br />&nbsp; &nbsp; - Java Application 을 개발하는 데 필요한 하부구조(Infrastructure)를 포괄적으로 제공한다<br />&nbsp; &nbsp; - Spring 이 하부구조를 처리하기 때문에 개발자는 Application 개발에 집중 할 수 있다<br />- 간단히 스프링 (Spring) 이라고도 불린다<br />- 동적인 웹 사이트를 개발하기 위한 여러가지 서비스를 제공한다</p>
+<blockquote data-ke-style="style2"><b>프레임워크란?</b><br /><span style="background-color: #f6e199;">소프트웨어의 구체적인 부분에 해당하는 설계와 구현을 재사용이 가능하게끔</span> <br /><span style="background-color: #f6e199;">일련의 협업화된 형태로 클래스들을 제공화한 틀 또는 기반구조 또는 뼈대</span>를 뜻한다<br /><br />Application 개발 시, 필수적인 코드, 알고리즘, 데이터베이스 연동 등과 같은 기능들을 위해 어느정도 구조를&nbsp;<br />제공해준다<br /><br />-&gt; 소프트웨어의 특정 문제를 해결하기 위해서 상호 협력하는 클래스와 인터페이스의 집합<br /><br /><b>라이브러리란?</b><br /><span style="background-color: #f6e199;">특정 기능에 대한 도구 or 함수들을 모은 집합</span><br /><br />즉, 프로그래머가 개발하는데 필요한 것들을 모아둔 것입니다.<br /><br />-&gt; &nbsp;&nbsp;단순 활용이 가능한 도구들의 집합<br /><br /><span style="background-color: #f6e199;">프레임워크와 라이브러리</span> 모두 개발자에게 필요한 것을 모아둔 것이라고 착각 할 수 있지만<span style="background-color: #f6e199;"> 큰 차이</span>가 존재합니다<br /><span style="background-color: #f6e199;">그것은 IOC (Inversion Of Control) 제어의 역전이다</span><br />Flow(흐름)에 대한 <span style="background-color: #f6e199;">제어 권한이 어디에 있느냐의 차이</span>인데, <span style="background-color: #f6e199;">프레임워크는 전체적인 흐름을 자체적</span>으로 가지고 있으며,<br />프로그래머가 그 안에 필요한 코드를 작성하는 반면에 <span style="background-color: #f6e199;">라이브러리는 사용자 흐름에 대해 제어</span>를 하며, 필요한 상황에<br />가져다 쓰는 것이다 (프레임워크는 어느정도 생명주기가 다 정해져있다 - 실행 전, 실행 후, 종료 후 처리를 하고있음)<br /><br />대부분의 프레임워크에는 제어의 역전(IOC)가 적용되고 있다는 점이다</blockquote>
+<p><figure class='imageblock alignCenter' data-origin-width="780" data-origin-height="343" data-ke-mobilestyle="widthOrigin"><span data-url='https://blog.kakaocdn.net/dn/bEoIL8/btriDx8okD3/apAvP6V16jaXLvMcr3zWgk/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/bEoIL8/btriDx8okD3/apAvP6V16jaXLvMcr3zWgk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbEoIL8%2FbtriDx8okD3%2FapAvP6V16jaXLvMcr3zWgk%2Fimg.png' data-origin-width="780" data-origin-height="343" data-ke-mobilestyle="widthOrigin"></span></figure></p>
+<p data-ke-size="size16"><span style="background-color: #f6e199;">스프링에서의 대표적인 IOC 기술은 @Autowired 즉, 의존성 주입 (DI)다</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<blockquote data-ke-style="style3"><b>참고</b></blockquote>
+<figure id="og_1635125615372" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="프레임워크와 라이브러리의 차이점" data-og-description="프레임워크와 라이브러리의 차이에 대해서 포스팅을 해야겠다고 생각했던 것은 어떤 분이 예전에 페북에서 'Angular Js와 React Js의 차이'에 대해서 물었던 글을 본 것에서 부터 시작하였습니다. 많" data-og-host="mangkyu.tistory.com" data-og-source-url="https://mangkyu.tistory.com/4" data-og-url="https://mangkyu.tistory.com/4" data-og-image="https://scrap.kakaocdn.net/dn/bK0g43/hyL5EB7qNZ/LK04dbCapeDl1h5prP1Xg0/img.png?width=780&amp;height=343&amp;face=0_0_780_343,https://scrap.kakaocdn.net/dn/yBpV0/hyL4K41J9t/PG3Xqqy6QVR3MyKFbUvyj1/img.png?width=780&amp;height=343&amp;face=0_0_780_343,https://scrap.kakaocdn.net/dn/gevBw/hyL4Nm8XfL/uCYUkNgUD1W43kVkP7ABa1/img.png?width=780&amp;height=343&amp;face=0_0_780_343"><a href="https://mangkyu.tistory.com/4" target="_blank" rel="noopener" data-source-url="https://mangkyu.tistory.com/4">
+<div class="og-image" style="background-image: url('https://scrap.kakaocdn.net/dn/bK0g43/hyL5EB7qNZ/LK04dbCapeDl1h5prP1Xg0/img.png?width=780&amp;height=343&amp;face=0_0_780_343,https://scrap.kakaocdn.net/dn/yBpV0/hyL4K41J9t/PG3Xqqy6QVR3MyKFbUvyj1/img.png?width=780&amp;height=343&amp;face=0_0_780_343,https://scrap.kakaocdn.net/dn/gevBw/hyL4Nm8XfL/uCYUkNgUD1W43kVkP7ABa1/img.png?width=780&amp;height=343&amp;face=0_0_780_343');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">프레임워크와 라이브러리의 차이점</p>
+<p class="og-desc" data-ke-size="size16">프레임워크와 라이브러리의 차이에 대해서 포스팅을 해야겠다고 생각했던 것은 어떤 분이 예전에 페북에서 'Angular Js와 React Js의 차이'에 대해서 물었던 글을 본 것에서 부터 시작하였습니다. 많</p>
+<p class="og-host" data-ke-size="size16">mangkyu.tistory.com</p>
+</div>
+</a></figure>
+<figure id="og_1635125598051" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="website" data-og-title="몰라도 되는 Spring - 리플렉션으로 만드는 Dynamic proxy" data-og-description="Dynamic proxy 이전 AOP Proxy 포스팅에서 Spring 에서 사용하는 Dynamic proxy와 CGLib를 이용한 proxy에 대해 말씀드리면서 다음과 같은 설명이 있었습니다. JDK dynamic proxy Reflection을 통해 동적으로 proxy 객체 " data-og-host="taes-k.github.io" data-og-source-url="https://taes-k.github.io/2021/05/15/dynamic-proxy-reflection/" data-og-url="https://taes-k.github.io/2021/05/15/dynamic-proxy-reflection/" data-og-image="https://scrap.kakaocdn.net/dn/cbwqqQ/hyL4DY7mXF/juAEtoFMWV95oKQ1g1bTAk/img.png?width=1250&amp;height=833&amp;face=0_0_1250_833"><a href="https://taes-k.github.io/2021/05/15/dynamic-proxy-reflection/" target="_blank" rel="noopener" data-source-url="https://taes-k.github.io/2021/05/15/dynamic-proxy-reflection/">
+<div class="og-image" style="background-image: url('https://scrap.kakaocdn.net/dn/cbwqqQ/hyL4DY7mXF/juAEtoFMWV95oKQ1g1bTAk/img.png?width=1250&amp;height=833&amp;face=0_0_1250_833');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">몰라도 되는 Spring - 리플렉션으로 만드는 Dynamic proxy</p>
+<p class="og-desc" data-ke-size="size16">Dynamic proxy 이전 AOP Proxy 포스팅에서 Spring 에서 사용하는 Dynamic proxy와 CGLib를 이용한 proxy에 대해 말씀드리면서 다음과 같은 설명이 있었습니다. JDK dynamic proxy Reflection을 통해 동적으로 proxy 객체</p>
+<p class="og-host" data-ke-size="size16">taes-k.github.io</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+<figure id="og_1635125690201" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="Spring AOP의 메커니즘과 Proxy Bean 생성" data-og-description="Moon" data-og-host="gmoon92.github.io" data-og-source-url="https://gmoon92.github.io/spring/aop/2019/02/23/spring-aop-proxy-bean.html" data-og-url="https://gmoon92.github.io/spring/aop/2019/02/23/spring-aop-proxy-bean.html" data-og-image="https://scrap.kakaocdn.net/dn/LmomB/hyL5CK4d4X/kP0yfAgYT7pKJSZ017BeM1/img.png?width=120&amp;height=120&amp;face=0_0_120_120"><a href="https://gmoon92.github.io/spring/aop/2019/02/23/spring-aop-proxy-bean.html" target="_blank" rel="noopener" data-source-url="https://gmoon92.github.io/spring/aop/2019/02/23/spring-aop-proxy-bean.html">
+<div class="og-image" style="background-image: url('https://scrap.kakaocdn.net/dn/LmomB/hyL5CK4d4X/kP0yfAgYT7pKJSZ017BeM1/img.png?width=120&amp;height=120&amp;face=0_0_120_120');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">Spring AOP의 메커니즘과 Proxy Bean 생성</p>
+<p class="og-desc" data-ke-size="size16">Moon</p>
+<p class="og-host" data-ke-size="size16">gmoon92.github.io</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+<figure id="og_1635125771975" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="[Spring] Bean 정리" data-og-description="Spring에서는 Spring Container, IoC Container라는 개념을 사용한다. Container는 인스턴스의 생명주기를 관리하며, 생성된 인스턴스들에게 추가적인 기능을 제공하도록 하는 것이다.즉 Container는 개발자가 " data-og-host="velog.io" data-og-source-url="https://velog.io/@gillog/Spring-Bean-%EC%A0%95%EB%A6%AC" data-og-url="https://velog.io/@gillog/Spring-Bean-정리" data-og-image="https://scrap.kakaocdn.net/dn/AXHPN/hyL4B1jDE7/lpkwoAokvrn7oMcrWGrecK/img.png?width=950&amp;height=500&amp;face=0_0_950_500"><a href="https://velog.io/@gillog/Spring-Bean-%EC%A0%95%EB%A6%AC" target="_blank" rel="noopener" data-source-url="https://velog.io/@gillog/Spring-Bean-%EC%A0%95%EB%A6%AC">
+<div class="og-image" style="background-image: url('https://scrap.kakaocdn.net/dn/AXHPN/hyL4B1jDE7/lpkwoAokvrn7oMcrWGrecK/img.png?width=950&amp;height=500&amp;face=0_0_950_500');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">[Spring] Bean 정리</p>
+<p class="og-desc" data-ke-size="size16">Spring에서는 Spring Container, IoC Container라는 개념을 사용한다. Container는 인스턴스의 생명주기를 관리하며, 생성된 인스턴스들에게 추가적인 기능을 제공하도록 하는 것이다.즉 Container는 개발자가</p>
+<p class="og-host" data-ke-size="size16">velog.io</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+<figure id="og_1635125955193" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="website" data-og-title="IoC - spring" data-og-description="BeanFactory 와 ApplicationContext 관계" data-og-host="dahye-jeong.gitbook.io" data-og-source-url="https://dahye-jeong.gitbook.io/spring/spring/2020-03-21-ioc" data-og-url="https://dahye-jeong.gitbook.io/spring/spring/2020-03-21-ioc" data-og-image=""><a href="https://dahye-jeong.gitbook.io/spring/spring/2020-03-21-ioc" target="_blank" rel="noopener" data-source-url="https://dahye-jeong.gitbook.io/spring/spring/2020-03-21-ioc">
+<div class="og-image" style="background-image: url();">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">IoC - spring</p>
+<p class="og-desc" data-ke-size="size16">BeanFactory 와 ApplicationContext 관계</p>
+<p class="og-host" data-ke-size="size16">dahye-jeong.gitbook.io</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p>
+<figure id="og_1635209124674" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="[Spring] Spring Framework란? 기본 개념 핵심 정리" data-og-description="Spring Framework란? 자바 플랫폼을 위한 오픈소스 애플리케이션 프레임워크로서 엔터프라이즈급 애플리케이션을 개발하기 위한 모든 기능을 종합적으로 제공하는 경량화된 솔루션입니다. 엔터프" data-og-host="khj93.tistory.com" data-og-source-url="https://khj93.tistory.com/entry/Spring-Spring-Framework%EB%9E%80-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-%ED%95%B5%EC%8B%AC-%EC%A0%95%EB%A6%AC" data-og-url="https://khj93.tistory.com/entry/Spring-Spring-Framework%EB%9E%80-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-%ED%95%B5%EC%8B%AC-%EC%A0%95%EB%A6%AC" data-og-image="https://scrap.kakaocdn.net/dn/bnZXxh/hyL5L3p09H/k3gteLbndtj6EkvJn56V91/img.png?width=400&amp;height=279&amp;face=0_0_400_279,https://scrap.kakaocdn.net/dn/hqDPm/hyL7iegYk8/vyJtgku9jcC5eCmUluxXW0/img.png?width=400&amp;height=279&amp;face=0_0_400_279,https://scrap.kakaocdn.net/dn/YsV5c/hyL7fhxO7S/kplH6Whh493lJhDmgwtr40/img.png?width=739&amp;height=373&amp;face=0_0_739_373"><a href="https://khj93.tistory.com/entry/Spring-Spring-Framework%EB%9E%80-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-%ED%95%B5%EC%8B%AC-%EC%A0%95%EB%A6%AC" target="_blank" rel="noopener" data-source-url="https://khj93.tistory.com/entry/Spring-Spring-Framework%EB%9E%80-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-%ED%95%B5%EC%8B%AC-%EC%A0%95%EB%A6%AC">
+<div class="og-image" style="background-image: url('https://scrap.kakaocdn.net/dn/bnZXxh/hyL5L3p09H/k3gteLbndtj6EkvJn56V91/img.png?width=400&amp;height=279&amp;face=0_0_400_279,https://scrap.kakaocdn.net/dn/hqDPm/hyL7iegYk8/vyJtgku9jcC5eCmUluxXW0/img.png?width=400&amp;height=279&amp;face=0_0_400_279,https://scrap.kakaocdn.net/dn/YsV5c/hyL7fhxO7S/kplH6Whh493lJhDmgwtr40/img.png?width=739&amp;height=373&amp;face=0_0_739_373');">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">[Spring] Spring Framework란? 기본 개념 핵심 정리</p>
+<p class="og-desc" data-ke-size="size16">Spring Framework란? 자바 플랫폼을 위한 오픈소스 애플리케이션 프레임워크로서 엔터프라이즈급 애플리케이션을 개발하기 위한 모든 기능을 종합적으로 제공하는 경량화된 솔루션입니다. 엔터프</p>
+<p class="og-host" data-ke-size="size16">khj93.tistory.com</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p><div class="container_postbtn #post_button_group">
+    <div class="postbtn_like">
+        
+<script>
+    window.ReactionButtonType = 'reaction';
+    window.ReactionApiUrl = '//theheydaze.tistory.com/reaction';
+    window.ReactionReqBody = {
+        entryId: 628    }
+</script>
+<div class="wrap_btn" id=reaction-628></div>
+<script src=https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/script/reaction/reaction-button-container.min.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114></script>
+        <div class="wrap_btn wrap_btn_share">
+    <button aria-expanded="false" class="btn_post sns_btn btn_share" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcDTS1u%2FbtriGWeVgeI%2FNQiyLuITq8DMiycWdCfmv1%2Fimg.png" data-title="01. 기술면접 - 스프링 - 스프링 프레임워크" data-description="공부목적으로 다른 블로그의 글을 그대로 따라치면서 작성되었습니다. 저작권 문제 시, 비공개 처리하겠습니다  스프링 프레임워크란 - 자바 엔터프라이즈 개발을 편하게 해주는 경량급 오픈소스 애플리케이션 프.." data-profile-image="https://tistory1.daumcdn.net/tistory/3895287/attach/874a602c1a0a4951bd78d6b01dc25c54" data-profile-name="THE HEYDAZE" data-pc-url="https://theheydaze.tistory.com/628" data-relative-pc-url="/628" data-blog-title="나눔코딩">
+        <span class="ico_postbtn ico_share">공유하기</span>
+    </button>
+    <div id="tistorySnsLayer" class="layer_post"></div>
+</div>
+                <div class="wrap_btn wrap_btn_etc" data-entry-id="628" data-entry-visibility="public" data-category-visibility="public">
+    <button aria-expanded="false" class="btn_post btn_etc2"><span class="ico_postbtn ico_etc">게시글 관리</span></button>
+    <div id="tistoryEtcLayer" class="layer_post"></div>
+</div>
+    </div>
+    <button type="button" class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="3895287" data-url="https://theheydaze.tistory.com/628" data-device="web_pc">
+    <em class="txt_state">구독하기</em>
+    <strong class="txt_tool_id">나눔코딩</strong>
+    <span class="img_common_tistory ico_check_type1"></span>
+</button>
+    <div class="postbtn_ccl" data-ccl-type="3">
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" target="_blank" class="link_ccl" rel="license">
+        <span class="bundle_ccl">
+            <span class="ico_postbtn ico_ccl1">저작자표시</span>        </span>
+    </a>
+</div>
+    <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Work rdf:about="">
+        <license rdf:resource="http://creativecommons.org/licenses/by-fr/2.0/kr/" />
+    </Work>
+    <License rdf:about="http://creativecommons.org/licenses/by-fr/">
+        <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+                <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+                    </License>
+</rdf:RDF>
+-->
+</div><div class="another_category another_category_color_gray">
+<h4>'<a href="/category/∞.%20기술%20면접">∞. 기술 면접</a>&nbsp;>&nbsp;<a href="/category/∞.%20기술%20면접/9.%20스프링">9. 스프링</a>' 카테고리의 다른 글</h4>
+<table>
+<tr>
+<th>
+<a href="/628?category=1026514"  class ="current" >01. 기술면접 - 스프링 - 스프링 프레임워크</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2021.10.25</td>
+</tr>
+</table></div></div>
+</div>
+
+<div class="page-stroke article-stroke"></div>
+<nav class="activity-func">
+<ul class="fc-list">
+<li><button class="fc-appearance fc-button fade-link show-comments-button" data-func="show-comments" aria-controls="comments" aria-selected="false">댓글<span id="commentCount628_0"><span class="number digit" data-count="(0)" aria-hidden="true"></span></span></button></li>
+<li><button class="fc-appearance fc-button fade-link show-export-button" data-func="show-export" aria-controls="export" aria-selected="false">공유하기</button></li>
+<li><button class="fc-appearance fc-button fade-link show-related-button" data-func="show-related" aria-controls="related" aria-selected="false">다른 글</button></li>
+</ul>
+</nav>
+<div class="activity-content-wrap">
+<section class="activity-content" id="comments" hidden aria-hidden="true">
+<h2 class="visuallyhidden-content">댓글</h2>
+<div class="comments">
+<div id="entry628Comment">
+
+<form method="post" action="/comment/add/628" onsubmit="return false" style="margin: 0">
+<div class="comment-form-wrap comment-wrap">
+<div class="icon comment-desc">
+<textarea class="fc-appearance" id="comment-textarea" style="height:108px" name="comment" required></textarea>
+<div class="comment-field">
+<label class="comment-field-blank" style="display:none" for="comment-textarea" aria-hidden="true"></label>
+
+
+<fieldset class="comment-guest-field" autocomplete="off" required>
+<legend>방문자 정보</legend>
+<div class="username-field">
+<input class="fc-appearance" id="comment-username-field" type="text" name="name" value="">
+<label for="comment-username-field" autocomplete="off">이름</label>
+</div>
+<div class="password-field">
+<input class="fc-appearance" id="comment-password-field" type="password" name="password">
+<label for="comment-password-field" autocomplete="off">암호</label>
+</div>
+</fieldset>
+
+<div class="protect-button">
+<input id="protect-comment" type="checkbox" name="secret">
+<label class="fc-icon" for="protect-comment" role="checkbox">운영자에게만 공개</label>
+</div>
+
+<button class="submit-comment fc-icon fc-appearance" onclick="addComment(this, 628); return false;">작성하기</button>
+</div>
+</div>
+<div class="comment-avatar icon" aria-hidden="true"></div>
+</div>
+</form>
+</div><script type="text/javascript">loadedComments[628]=true;findFragmentAndHighlight(628)</script>
+</div>
+</section>
+<section class="activity-content" id="export" hidden aria-hidden="true">
+<h2 class="visuallyhidden-content">이 글 공유하기</h2>
+<div class="export-content">
+<ul class="fc-list">
+<li class="export-item subscribe-item">
+<a class="export-link no-text fc-subscribe btn_subscription" href="javascript:" role="button" aria-label="이 블로그 구독하기"><span class="txt_state">구독하기</span></a>
+<div class="export-visual icon subscribe-on-tistory fc-subscribe btn_subscription" hidden aria-hidden="true">
+<p class="txt_state">구독하기</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="kakaotalk" role="button" aria-label="카카오톡 메신저로 메시지 보내기">카카오톡</a>
+<div class="export-visual icon kakaotalk" hidden aria-hidden="true">
+<p>카카오톡</p>
+</div>
+</li>
+<li class="export-item mobile">
+<a class="export-link no-text" href="javascript:" data-export="line" role="button" aria-label="라인 메신저 앱으로 메시지 보내기">라인</a>
+<div class="export-visual icon line-app" hidden aria-hidden="true">
+<p>라인</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="twitter" role="button" aria-label="트위터에 트윗하기">트위터</a>
+<div class="export-visual icon twitter" hidden aria-hidden="true">
+<p>트위터</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="facebook" role="button" aria-label="페이스북 담벼락에 올리기">Facebook</a>
+<div class="export-visual icon facebook" hidden aria-hidden="true">
+<p>Facebook</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="kakaostory" role="button" aria-label="카카오스토리에 공유하기">카카오스토리</a>
+<div class="export-visual icon kakaostory" hidden aria-hidden="true">
+<p>카카오스토리</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="band" role="button" aria-label="네이버 밴드에 내보내기">밴드</a>
+<div class="export-visual icon band-app" hidden aria-hidden="true">
+<p>밴드</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="naver" role="button" aria-label="네이버 블로그를 포함하여 네이버가 운영하는 서비스에 내보내기">네이버 블로그</a>
+<div class="export-visual icon naver-app" hidden aria-hidden="true">
+<p>네이버 블로그</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="pocket" role="button" aria-label="포켓에 내보내기">Pocket</a>
+<div class="export-visual icon pocket-app" hidden aria-hidden="true">
+<p>Pocket</p>
+</div>
+</li>
+<li class="export-item">
+<a class="export-link no-text" href="javascript:" data-export="evernote" role="button" aria-label="에버노트에 내보내기">Evernote</a>
+<div class="export-visual icon evernote" hidden aria-hidden="true">
+<p>Evernote</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="activity-content" id="related" hidden aria-hidden="true">
+<h2 class="visuallyhidden-content">다른 글</h2>
+<div class="related-content card-type">
+<ul class="fc-list">
+
+
+<li class="related-item article-item">
+<div class="index-item-wrap">
+<a class="no-text index-item-link" href="/633?category=1026514" role="button">06. 기술면접 - 스프링 - MVC 패턴</a>
+<div class="index-item-visual" hidden aria-hidden="true">
+<div class="index-item-text">
+<h2>06. 기술면접 - 스프링 - MVC 패턴</h2>
+<span class="digit">2021.10.25</span>
+<div class="index-item-summary"></div>
+</div>
+<div class="index-item-thumbnail" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=https://blog.kakaocdn.net/dn/dlqM6V/btriCFr4DLv/Gyfclsc2xIKAcCsvf74nI1/img.png);background-position:50% 50%;background-size:cover"></div>
+</div>
+</div>
+</li>
+
+<li class="related-item article-item">
+<div class="index-item-wrap">
+<a class="no-text index-item-link" href="/631?category=1026514" role="button">04. 기술면접 - 스프링 - 컨테이너 (Container)</a>
+<div class="index-item-visual" hidden aria-hidden="true">
+<div class="index-item-text">
+<h2>04. 기술면접 - 스프링 - 컨테이너 (Container)</h2>
+<span class="digit">2021.10.25</span>
+<div class="index-item-summary"></div>
+</div>
+<div class="index-item-thumbnail" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=https://blog.kakaocdn.net/dn/bprPea/btriQ5PzAcy/niiwbooGdCwxFS94QRMAZK/img.png);background-position:50% 50%;background-size:cover"></div>
+</div>
+</div>
+</li>
+
+<li class="related-item article-item">
+<div class="index-item-wrap">
+<a class="no-text index-item-link" href="/630?category=1026514" role="button">03. 기술면접 - 스프링 - 빈(Bean)</a>
+<div class="index-item-visual" hidden aria-hidden="true">
+<div class="index-item-text">
+<h2>03. 기술면접 - 스프링 - 빈(Bean)</h2>
+<span class="digit">2021.10.25</span>
+<div class="index-item-summary"></div>
+</div>
+<div class="index-item-thumbnail" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=https://blog.kakaocdn.net/dn/VF56O/btriGj2U0uY/7vRSIy8HevkL0sUHmYVRDK/img.png);background-position:50% 50%;background-size:cover"></div>
+</div>
+</div>
+</li>
+
+<li class="related-item article-item">
+<div class="index-item-wrap">
+<a class="no-text index-item-link" href="/629?category=1026514" role="button">02. 기술면접 - 스프링 - 스프링 MVC 와 스프링 Boot</a>
+<div class="index-item-visual" hidden aria-hidden="true">
+<div class="index-item-text">
+<h2>02. 기술면접 - 스프링 - 스프링 MVC 와 스프링 Boot</h2>
+<span class="digit">2021.10.25</span>
+<div class="index-item-summary"></div>
+</div>
+<div class="index-item-thumbnail" data-style="background-image:url(//img1.daumcdn.net/thumb/R800x0/?fname=https://blog.kakaocdn.net/dn/qm0hc/btriMKkRMPA/FXhLns3KlaAeUkTvROjEd1/img.png);background-position:50% 50%;background-size:cover"></div>
+</div>
+</div>
+</li>
+
+
+<li class="related-item blank-item blank1" aria-hidden="true"></li>
+<li class="related-item blank-item blank2" aria-hidden="true"></li>
+<li class="related-item blank-item blank3" aria-hidden="true"></li>
+<li class="related-item blank-item blank4" aria-hidden="true"></li>
+</ul>
+<div class="more-contents-wrap">
+<a class="icon fade-link more-contents" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/9.%20%EC%8A%A4%ED%94%84%EB%A7%81" role="button">다른 글 더 둘러보기</a>
+</div>
+</div>
+</section>
+</div>
+
+<script>let generalThumb="https://blog.kakaocdn.net/dn/cDTS1u/btriGWeVgeI/NQiyLuITq8DMiycWdCfmv1/img.png";</script>
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+<script>document.head.insertAdjacentHTML("beforeend",'<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/vs2015.min.css">');let code=document.getElementById("article").getElementsByTagName("pre");for(let i=0;i<code.length;i++){codeInner=code[i].getElementsByTagName("code")[0];if(codeInner!==null){codeInner.closest("pre").setAttribute("class","procode-wrap");}};hljs.initHighlightingOnLoad();</script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.6.0/dist/highlightjs-line-numbers.min.js"></script>
+<script>hljs.initLineNumbersOnLoad();</script>
+
+
+<script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
+<script defer src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script_article.js"></script>
+<script defer src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script_activity.js"></script>
+<script defer src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script_export.js"></script>
+<script defer src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script_comments.js"></script>
+</article>
+
+
+</div>
+</div>
+
+</section>
+</main>
+
+<nav class="scrollbar-support" id="pagination">
+<div class="pagination-wrap">
+<ul class="pagination fc-list">
+<li class="pg-prev">
+<a class="icon fade-link "  href='/629' role="button">최신</a>
+</li>
+<li class="pg-number">
+<ul class="fc-list">
+
+<li>
+<a class="fade-link digit number"  href='/642' role="button"><span >1</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  role="button"><span >&middot;&middot;&middot;</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/633' role="button"><span >6</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/631' role="button"><span >7</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/630' role="button"><span >8</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/629' role="button"><span >9</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  role="button"><span class="selected">10</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/626' role="button"><span >11</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/625' role="button"><span >12</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/624' role="button"><span >13</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/623' role="button"><span >14</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  role="button"><span >&middot;&middot;&middot;</span></a>
+</li>
+
+<li>
+<a class="fade-link digit number"  href='/2' role="button"><span >317</span></a>
+</li>
+
+</ul>
+</li>
+<li class="pg-next">
+<a class="icon fade-link "  href='/626' role="button">다음</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<aside class="sidebar-area">
+<div class="sidebar-scrollbar" hidden aria-hidden="true">
+<div class="sidebar-scrollbar-inner"></div>
+</div>
+<div class="sidebar-inner">
+<section class="sidebar-title">
+<h3 class="visuallyhidden-content">정보</h3>
+<a class="no-text sidebar-title-link" href="/" role="button">나눔코딩 블로그의 첫 페이지로 이동</a>
+<div class="sidebar-title-inner" aria-hidden="true">
+<div class="sidebar-avatar" data-style="background-image:url(//img1.daumcdn.net/thumb/R240x0/?fname=https://tistory1.daumcdn.net/tistory/3895287/attach/874a602c1a0a4951bd78d6b01dc25c54)"></div>
+<p>나눔코딩</p>
+</div>
+</section>
+<div class="sidebar-contents">
+<div class="sub-navigation" id="sidebar" aria-hidden="true">
+<button class="fc-appearance fc-icon fc-button close-sidebar" data-func="close-sidebar">사이드바 닫기</button>
+<ul class="fc-list sidebar-func-list">
+<li class="sidebar-go-to-index-inner" style="" aria-hidden="false"><a class="fc-icon sidebar-go-to-index" href="/" role="button">나눔코딩의 첫 페이지로 이동</a></li>
+</ul>
+<div class="sidebar" style="color:#fff;">
+<button class="fc-appearance fc-button no-text transparent" data-func="close-sidebar" style="display:none" aria-hidden="true">사이드바 닫기</button>
+
+<!-- 검색 -->
+<section class="module search-module icon empty">
+<h3>검색</h3>
+
+<form>
+<input class="fc-appearance search-field" type="search" name="search" value="" onkeypress="if(event.keyCode==13){try{window.location.href='/search/'+looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value='';return false;}catch(e){}}" aria-label="검색어 입력" autocomplete="off" required>
+<button class="fc-appearance fc-icon search-button" onclick="try{window.location.href='/search/'+looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value='';return false;}catch(e){}" class="submit" disabled>검색</button>
+</form>
+
+</section>
+
+<!-- 메뉴 -->
+<section class="module menu-module">
+<h3>메뉴</h3>
+<ul>		<li class="t_menu_home first">
+			<a href="/">홈</a>
+		</li>
+				<li class="t_menu_tag">
+			<a href="/tag">태그</a>
+		</li>
+				<li class="t_menu_guestbook last">
+			<a href="/guestbook">방명록</a>
+		</li>
+		</ul>
+</section>
+
+<!-- 카테고리 -->
+<section class="module category-module close-sub-category">
+<h3>카테고리</h3>
+<ul class="tt_category">
+	<li class="">
+		<a class="link_tit" href="/category">
+			분류 전체보기							<span class="c_cnt">(317)</span>
+			
+					</a>
+
+				<ul class="category_list">
+							<li class="">
+					<a class="link_item" href="/category/%E2%88%9E.%20%EC%9D%BD%EC%9D%80%20%EA%B1%B0%EB%A6%AC">
+						∞. 읽은 거리													<span class="c_cnt">(3)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91">
+						∞. 기술 면접													<span class="c_cnt">(61)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/1.%20%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0">
+									1. 자료구조
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/2.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">
+									2. 네트워크
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/3.%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C">
+									3. 운영체제
+																			<span class="c_cnt">(11)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/4.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">
+									4. 데이터베이스
+																			<span class="c_cnt">(13)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/5.%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4">
+									5. 디자인 패턴
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/6.%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">
+									6. 알고리즘
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/7.%20%EC%9E%90%EB%B0%94">
+									7. 자바
+																			<span class="c_cnt">(15)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/8.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8">
+									8. 자바스크립트
+																			<span class="c_cnt">(7)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/9.%20%EC%8A%A4%ED%94%84%EB%A7%81">
+									9. 스프링
+																			<span class="c_cnt">(5)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/10.%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0">
+									10. 시큐리티
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/11.%20%EA%B8%B0%ED%83%80">
+									11. 기타
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/%E2%88%9E.%20%EA%B8%B0%EC%88%A0%20%EB%A9%B4%EC%A0%91/12.%20Vue">
+									12. Vue
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/%E2%88%9E.%20%EC%9B%B9%EA%B0%9C%EB%B0%9C%20%EC%9C%A0%EC%9A%A9%ED%95%9C%20%EC%82%AC%EC%9D%B4%ED%8A%B8">
+						∞. 웹개발 유용한 사이트													<span class="c_cnt">(15)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/%E2%88%9E.%20%ED%8A%B8%EB%9F%AC%EB%B8%94%20%EC%8A%88%ED%8C%85%20%2B%20TIL">
+						∞. 트러블 슈팅 + TIL													<span class="c_cnt">(7)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/00.%20%EC%B6%9C%EB%B0%9C">
+						00. 출발													<span class="c_cnt">(9)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/01.%20%EC%97%91%EC%85%80">
+						01. 엑셀													<span class="c_cnt">(9)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/01.%20%EC%97%91%EC%85%80/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(4)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/01.%20%EC%97%91%EC%85%80/%EC%BB%B4%ED%99%9C%201%EA%B8%89">
+									컴활 1급
+																			<span class="c_cnt">(4)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/01.%20%EC%97%91%EC%85%80/VBA">
+									VBA
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/02.%20%EC%97%91%EC%84%B8%EC%8A%A4">
+						02. 엑세스													<span class="c_cnt">(9)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/02.%20%EC%97%91%EC%84%B8%EC%8A%A4/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(5)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/02.%20%EC%97%91%EC%84%B8%EC%8A%A4/%EC%BB%B4%ED%99%9C%201%EA%B8%89">
+									컴활 1급
+																			<span class="c_cnt">(4)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/04.%20Oracle">
+						04. Oracle													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/04.%20Oracle/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/03.%20JAVA">
+						03. JAVA													<span class="c_cnt">(8)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/03.%20JAVA/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(7)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/03.%20JAVA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">
+									객체지향 프로그래밍
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/05.%20HTML">
+						05. HTML													<span class="c_cnt">(13)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/05.%20HTML/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/05.%20HTML/css">
+									css
+																			<span class="c_cnt">(10)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/05.%20HTML/sass">
+									sass
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/05.%20HTML/less">
+									less
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/06.%20Javascript">
+						06. Javascript													<span class="c_cnt">(16)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/06.%20Javascript/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(13)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/06.%20Javascript/ES6%20%EB%AA%A8%EB%93%88">
+									ES6 모듈
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/06.%20Javascript/Canvas">
+									Canvas
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/07.%20JSP">
+						07. JSP													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/07.%20JSP/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/08.%20jQuery">
+						08. jQuery													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/08.%20jQuery/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/09.%20BootStrap">
+						09. BootStrap													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/09.%20BootStrap/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/09.%20BootStrap/v4%20-%20Layout">
+									v4 - Layout
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/10.%20Spring">
+						10. Spring													<span class="c_cnt">(30)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/%EC%8B%A4%ED%97%98">
+									실험
+																			<span class="c_cnt">(4)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/MVC">
+									MVC
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/BOOT">
+									BOOT
+																			<span class="c_cnt">(6)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Security">
+									Security
+																			<span class="c_cnt">(10)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Lib%20%28Library%29">
+									Lib (Library)
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/%EB%B2%A4%EC%B9%98%EB%A7%88%ED%82%B9">
+									벤치마킹
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/JUnit5">
+									JUnit5
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/DevTools">
+									DevTools
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Socket">
+									Socket
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Batch">
+									Batch
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Mobile">
+									Mobile
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/WebFlux">
+									WebFlux
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Cloud">
+									Cloud
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Thymleaf">
+									Thymleaf
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/Actuator">
+									Actuator
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/10.%20Spring/%EC%84%B1%EB%8A%A5%20%ED%85%8C%EC%8A%A4%ED%8A%B8">
+									성능 테스트
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/11.%20JetBrains">
+						11. JetBrains													<span class="c_cnt">(34)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/11.%20JetBrains/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/11.%20JetBrains/IntelliJ%20IDEA">
+									IntelliJ IDEA
+																			<span class="c_cnt">(33)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/11.%20JetBrains/WebStorm">
+									WebStorm
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/11.%20JetBrains/Pycham">
+									Pycham
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/12.%20API">
+						12. API													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/12.%20API/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/12.%20API/%EB%84%A4%EC%9D%B4%EB%B2%84%20API">
+									네이버 API
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/12.%20API/%EC%B9%B4%EC%B9%B4%EC%98%A4%20API">
+									카카오 API
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/12.%20API/%EA%B5%AC%EA%B8%80%20API">
+									구글 API
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/12.%20API/%EC%9D%B8%EC%8A%A4%ED%83%80%EA%B7%B8%EB%9E%A8%20API">
+									인스타그램 API
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/13.%20AutoHotkey">
+						13. AutoHotkey													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/14.%20Python">
+						14. Python													<span class="c_cnt">(8)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/Selenium">
+									Selenium
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/Beautiful%20Soup">
+									Beautiful Soup
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/openpyxl">
+									openpyxl
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/Pyqt5">
+									Pyqt5
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/Deep%20learning%20%28open%20CV%29">
+									Deep learning (open CV)
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/Geocoder">
+									Geocoder
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/Anaconda">
+									Anaconda
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/DeepLearning">
+									DeepLearning
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/14.%20Python/Jupyter%20Nootbook">
+									Jupyter Nootbook
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/14.5.%20R">
+						14.5. R													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/15.%20JMeter">
+						15. JMeter													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/15.%20JMeter/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C">
+									다운로드
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/16.%20Vue%20JS">
+						16. Vue JS													<span class="c_cnt">(23)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/16.%20Vue%20JS/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/16.%20Vue%20JS/Vue%202">
+									Vue 2
+																			<span class="c_cnt">(15)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/16.%20Vue%20JS/Vue%203">
+									Vue 3
+																			<span class="c_cnt">(5)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/16.%20Vue%20JS/Vuetify%202.5.8">
+									Vuetify 2.5.8
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/17.%20Git">
+						17. Git													<span class="c_cnt">(12)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/17.%20Git/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(8)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/17.%20Git/ItelliJ%20IDEA">
+									ItelliJ IDEA
+																			<span class="c_cnt">(4)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/17.%20Git/SourceTree">
+									SourceTree
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/18.%20AWS">
+						18. AWS													<span class="c_cnt">(5)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/18.%20AWS/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/18.%20AWS/Jira">
+									Jira
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/19.%20Naver%20Cloud%20Platform">
+						19. Naver Cloud Platform													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/20.%20Google%20Cloud%20Platform">
+						20. Google Cloud Platform													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/20.%20Google%20Cloud%20Platform/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/20.%20Google%20Cloud%20Platform/stt%20%26%20tts">
+									stt &amp; tts
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/21.%20Kotlin">
+						21. Kotlin													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/22.%20Android">
+						22. Android													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/22.%20Android/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/22.%20Android/Java">
+									Java
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/22.%20Android/Kotlin">
+									Kotlin
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/22.%20Android/Flutter%20FrameWork">
+									Flutter FrameWork
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/23.%20Clean%20Code%20%5BJAVA%5D">
+						23. Clean Code [JAVA]													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/24.%20BuildTool">
+						24. BuildTool													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/24.%20BuildTool/Maven">
+									Maven
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/24.%20BuildTool/Gradle">
+									Gradle
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/25.%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">
+						25. 자료 구조와 알고리즘													<span class="c_cnt">(18)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/25.%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/JAVA">
+									JAVA
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/25.%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Java%20Script">
+									Java Script
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/25.%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4">
+									프로그래머스
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/25.%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B0%B1%EC%A4%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">
+									백준 알고리즘
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/25.%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%82%98%EC%9D%98%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">
+									나의 알고리즘
+																			<span class="c_cnt">(14)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/25.%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Brilliant%20%EA%B3%B5%EB%B6%80">
+									Brilliant 공부
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/26.%20React">
+						26. React													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/26.%20React/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/26.%20React/%EA%B0%95%EC%9D%98%20%EC%A0%95%EB%A6%AC">
+									강의 정리
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/27.%20PostMan">
+						27. PostMan													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/27.%20PostMan/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/28.%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4">
+						28. 프로그래머스													<span class="c_cnt">(9)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/29.%20Leet%20Code">
+						29. Leet Code													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/30.%20MySQL">
+						30. MySQL													<span class="c_cnt">(3)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/30.%20MySQL/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/30.%20MySQL/%EB%AC%B8%EC%A0%9C">
+									문제
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/73.%20GraphQL">
+						73. GraphQL													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/74.%20Nuxt%20JS">
+						74. Nuxt JS													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/75.%20Electron">
+						75. Electron													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/76.%20UX%20%26amp%3B%20UI%20Design%20Tool">
+						76. UX &amp;amp; UI Design Tool													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/76.%20UX%20%26amp%3B%20UI%20Design%20Tool/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/76.%20UX%20%26amp%3B%20UI%20Design%20Tool/Axure">
+									Axure
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/76.%20UX%20%26amp%3B%20UI%20Design%20Tool/Sketch">
+									Sketch
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/76.%20UX%20%26amp%3B%20UI%20Design%20Tool/Figma">
+									Figma
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/77.%20MarkDown">
+						77. MarkDown													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/77.%20MarkDown/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/78.%20Tomcat">
+						78. Tomcat													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/78.%20Tomcat/%EB%A9%94%EB%AA%A8">
+									메모
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/79.%20Element%20JS">
+						79. Element JS													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/80.%20Parallax%20JS">
+						80. Parallax JS													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/80.%20Parallax%20JS/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/81.%20Player%20JS">
+						81. Player JS													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/81.%20Player%20JS/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/82.%20Smart%20Maker">
+						82. Smart Maker													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/83.%20Vim">
+						83. Vim													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/83.%20Vim/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/84.%20Linux">
+						84. Linux													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/84.%20Linux/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/84.%20Linux/Centos%207">
+									Centos 7
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/84.%20Linux/Ubuntu">
+									Ubuntu
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/85.%20Node%20JS">
+						85. Node JS													<span class="c_cnt">(2)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/85.%20Node%20JS/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/85.%20Node%20JS/WebRTC">
+									WebRTC
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/85.%20Node%20JS/NVM">
+									NVM
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/86.%20Propeller%20JS">
+						86. Propeller JS													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/87.%20FullPage%20JS">
+						87. FullPage JS													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/87.%20FullPage%20JS/%EA%B8%B0%EC%B4%88">
+									기초
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/88.%20%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8">
+						88. 아두이노													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/89.%20Tensorflow">
+						89. Tensorflow													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/90.%20%EC%9B%B9%20%ED%8C%A8%ED%82%B7%20%EB%B6%84%EC%84%9D">
+						90. 웹 패킷 분석													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/91.%20%ED%81%AC%EB%A1%AC%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8F%84%EA%B5%AC">
+						91. 크롬 개발자도구													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/92.%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4">
+						92. 디자인 패턴													<span class="c_cnt">(7)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/92.%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4/%EC%83%9D%EC%84%B1%28Creational%29">
+									생성(Creational)
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/92.%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4/%EA%B5%AC%EC%A1%B0%28Structral%29">
+									구조(Structral)
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/92.%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4/%ED%96%89%EC%9C%84%28Behavioral%29">
+									행위(Behavioral)
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/92.%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4/SOLID%20%ED%8C%A8%ED%84%B4">
+									SOLID 패턴
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/95.%20Linux%20Shell%20Script">
+						95. Linux Shell Script													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/96.%20%EA%B5%AC%EA%B8%80%20%EC%95%A0%EB%84%90%EB%A6%AC%EC%8A%A4%ED%8B%B1">
+						96. 구글 애널리스틱													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/97.%20ffmpeg">
+						97. ffmpeg													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/98.%20ShareX">
+						98. ShareX													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/%EC%9E%90%EB%A3%8C%EC%8B%A4">
+						자료실													<span class="c_cnt">(0)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/%EA%B8%B0%ED%83%80">
+						기타													<span class="c_cnt">(2)</span>
+						
+											</a>
+
+					
+				</li>
+					</ul>
+			</li>
+</ul>
+</section>
+
+<!-- 공지사항 -->
+
+<section class="module notice-module">
+<h3>공지사항</h3>
+<ul>
+
+
+</ul>
+</section>
+
+
+<!-- 아카이브 -->
+<section class="module archive-module">
+<h3>아카이브</h3>
+<ul>
+
+<li>
+<a class="icon digit" href="/archive/202204" role="button" aria-label="2022/04 아카이브에 있는 1개의 글">2022/04</a>
+</li>
+
+
+<li>
+<a class="icon digit" href="/archive/202201" role="button" aria-label="2022/01 아카이브에 있는 1개의 글">2022/01</a>
+</li>
+
+
+<li>
+<a class="icon digit" href="/archive/202111" role="button" aria-label="2021/11 아카이브에 있는 2개의 글">2021/11</a>
+</li>
+
+
+<li>
+<a class="icon digit" href="/archive/202110" role="button" aria-label="2021/10 아카이브에 있는 65개의 글">2021/10</a>
+</li>
+
+
+<li>
+<a class="icon digit" href="/archive/202109" role="button" aria-label="2021/09 아카이브에 있는 56개의 글">2021/09</a>
+</li>
+
+</ul>
+</section>
+
+<!-- 태그 -->
+<section class="module tags-module">
+<h3>태그</h3>
+<ul>
+
+<li>
+<a class="icon cloud5" href="/tag/%EA%B9%81" role="button" aria-label="깁 태그">깁</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%97%91%EC%85%80%20%EA%B0%80%EC%9A%B4%EB%8D%B0%EB%A7%9E%EC%B6%A4" role="button" aria-label="엑셀 가운데맞춤 태그">엑셀 가운데맞춤</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%97%91%EC%85%80%20%EA%B8%B0%EB%B3%B8%EC%9E%91%EC%97%85" role="button" aria-label="엑셀 기본작업 태그">엑셀 기본작업</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%97%91%EC%85%80%20%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95" role="button" aria-label="엑셀 기본사용법 태그">엑셀 기본사용법</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%97%91%EC%85%80%20%EB%B6%84%EC%84%9D%EC%9E%91%EC%97%85" role="button" aria-label="엑셀 분석작업 태그">엑셀 분석작업</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%A1%B5" role="button" aria-label="졵 태그">졵</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%97%91%EC%85%80%20%EA%B8%B0%ED%83%80%EC%9E%91%EC%97%85" role="button" aria-label="엑셀 기타작업 태그">엑셀 기타작업</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%97%91%EC%85%80%20%ED%91%9C%EC%8B%9C%ED%98%95%EC%8B%9D" role="button" aria-label="엑셀 표시형식 태그">엑셀 표시형식</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%97%91%EC%85%80%20%EA%B8%80%EC%94%A8" role="button" aria-label="엑셀 글씨 태그">엑셀 글씨</a>
+</li>
+
+<li>
+<a class="icon cloud5" href="/tag/%EC%82%AC%EB%AC%B4%EC%9E%90%EB%8F%99%ED%99%94%EB%A5%BC%20%ED%86%B5%ED%95%98%EC%97%AC%20%EB%B3%B8%EC%97%85%EC%97%90%20%EC%A1%B0%EA%B8%88%EB%8D%94%20%ED%9E%98%EC%9D%84%20%EC%93%B8%20%EC%88%98%20%EC%9E%88%EB%8F%84%EB%A1%9D.." role="button" aria-label="사무자동화를 통하여 본업에 조금더 힘을 쓸 수 있도록.. 태그">사무자동화를 통하여 본업에 조금더 힘을 쓸 수 있도록..</a>
+</li>
+
+
+</ul>
+</section>
+
+<!-- 나의 외부 링크 -->
+<section class="module link-module">
+<h3>나의 외부 링크</h3>
+<ul>
+
+<li>
+<a class="icon" href="https://way-be-developer.tistory.com/" target="_blank" role="button" aria-label="비전공자 개발자 링크">비전공자 개발자</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://readystory.tistory.com/117" target="_blank" role="button" aria-label="자바 디자인 패턴 링크">자바 디자인 패턴</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://gdtbgl93.tistory.com/142" target="_blank" role="button" aria-label="자바 디자인 패턴 링크">자바 디자인 패턴</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://soon-devblog.tistory.com/category/Spring" target="_blank" role="button" aria-label="스프링 블로그 링크">스프링 블로그</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://www.youngsam.net/entry/XSSCross-Site-Scripting-%ED%81%AC%EB%A1%9C%EC%8A%A4-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85?category=28" target="_blank" role="button" aria-label="해킹보안 &amp; 웹 관련 링크">해킹보안 &amp; 웹 관련</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://www.erdcloud.com/library" target="_blank" role="button" aria-label="ERD 생성 링크">ERD 생성</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://minkukjo.github.io/category/framework/" target="_blank" role="button" aria-label="전문 기술 블로그 링크">전문 기술 블로그</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://jeong-pro.tistory.com/222" target="_blank" role="button" aria-label="Servlet에 대한 개념없이 스⋯ 링크">Servlet에 대한 개념없이 스⋯</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://moonsiri.tistory.com/46" target="_blank" role="button" aria-label="스프링 FitlerChainList 링크">스프링 FitlerChainList</a>
+</li>
+
+
+<li>
+<a class="icon" href="https://st-lab.tistory.com/250" target="_blank" role="button" aria-label="알고리즘 파워 블로그 링크">알고리즘 파워 블로그</a>
+</li>
+
+</ul>
+</section>
+
+</div>
+</div>
+<div class="sub-navigation" id="blog-info" hidden aria-hidden="true">
+<button class="fc-appearance fc-icon fc-button close-blog-info" data-func="close-blog-info">블로그 정보 닫기</button>
+<div class="sidebar">
+<button class="fc-appearance fc-button no-text transparent" data-func="close-blog-info" hidden aria-hidden="true">블로그 정보 닫기</button>
+<section class="module info-module">
+<h3>정보</h3>
+<a class="info-module-button no-text" href="/" role="button">THE HEYDAZE의 나눔코딩</a>
+<div class="align-center" aria-hidden="true">
+<div class="info-module-icon" data-style="background-image:url(//img1.daumcdn.net/thumb/R240x0/?fname=https://tistory1.daumcdn.net/tistory/3895287/attach/874a602c1a0a4951bd78d6b01dc25c54)"></div>
+<div class="info-module-text">
+<p>나눔코딩</p>
+<span>THE HEYDAZE</span>
+</div>
+</div>
+</section>
+
+<!-- 블로그 구독하기 -->
+<section class="module subscribe-module">
+<h3>블로그 구독하기</h3>
+<ul>
+<li class="enable-subscription">
+<a class="icon mdl-subsc-on-tistory fc-subscribe btn_subscription" href="javascript:" role="button"><span class="txt_state">구독하기</span></a>
+</li>
+
+<li>
+<a class="icon mdl-subsc-on-feed" href="https://theheydaze.tistory.com/rss" target="_blank" role="button">RSS 피드</a>
+</li>
+</ul>
+</section>
+<div class='module module_plugin'>        <style>#chart-time {font-size:11px; text-align:right; color:#999; padding-right: 15px;}</style>
+        <div id="chartdiv"></div>
+        <div id="chart-time">09-21 20:34</div>
+        <script src="//t1.daumcdn.net/tistory_admin/lib/amchart-4/core.js"></script>
+        <script src="//t1.daumcdn.net/tistory_admin/lib/amchart-4/charts.js"></script>
+        <script type="text/javascript">
+        am4core.ready(function() {       
+            am4core.addLicense("CH90809262");
+            var chart = am4core.create("chartdiv", am4charts.XYChart);
+            
+            // Add data
+            chart.data = [{"visits":315,"date":"20220915"},{"visits":230,"date":"20220916"},{"visits":95,"date":"20220917"},{"visits":129,"date":"20220918"},{"visits":351,"date":"20220919"},{"visits":337,"date":"20220920"},{"visits":267,"date":"20220921"}];
+            
+            var values = chart.data.map(function(value){
+                return value.visits
+            });
+            var minValue = values.reduce(function(acc, current) {
+                return Math.min(acc, current);
+            });
+            var maxValue = values.reduce(function(acc, current) {
+                return Math.max(acc, current);
+            });
+            
+            // Set input format for the dates
+            chart.dateFormatter.inputDateFormat = "yyyyMMdd";
+            
+            // Create axes
+            var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+            var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+            
+            dateAxis.renderer.grid.template.disabled = true;
+            dateAxis.dateFormats.setKey("day", "dd");
+            dateAxis.periodChangeDateFormats.setKey("day", "dd");
+            dateAxis.renderer.minGridDistance = 1;
+            dateAxis.fontSize = "10.5px";
+            dateAxis.color = "#ff0000";
+            dateAxis.opacity = 0.5;
+            
+            valueAxis.opacity = 0.5;
+            valueAxis.fontSize = "10.5px";
+            valueAxis.paddingBottom = 5;
+            valueAxis.marginLeft = -20;
+            
+            
+            valueAxis.min = minValue < 0 ? 0 : minValue;
+            valueAxis.max = maxValue + 10;
+            
+            // Create series
+            var series = chart.series.push(new am4charts.LineSeries());
+            series.dataFields.valueY = "visits";
+            series.dataFields.dateX = "date";
+            series.tooltipText = "{visits}"
+            series.strokeWidth = 1;
+            series.minBulletDistance = 15;
+            
+            // Drop-shaped tooltips
+            series.tooltip.background.cornerRadius = 20;
+            series.tooltip.background.strokeOpacity = 0;
+            series.tooltip.pointerOrientation = "vertical";
+            series.tooltip.label.minWidth = 40;
+            series.tooltip.label.minHeight = 40;
+            series.tooltip.label.textAlign = "middle";
+            series.tooltip.label.textValign = "middle";
+            
+            // Make bullets grow on hover
+            var bullet = series.bullets.push(new am4charts.CircleBullet());
+            bullet.circle.strokeWidth = 2;
+            bullet.circle.radius = 3;
+            bullet.circle.fill = am4core.color("#fff");
+        });
+        </script></div>
+<!-- 방문자 -->
+<section class="module visitor-module" role="text" aria-label="이 블로그는 총 101,876명이 방문했고, 어제는 337명, 오늘은 269명이 방문했습니다.">
+<h3>방문자</h3>
+<ul>
+<li class="visitor-emphasis">
+<span class="visitor-lable">전체 방문자</span> <span class="visitor-count digit">101,876</span>
+</li>
+<li>
+<span class="visitor-lable">오늘</span> <span class="visitor-count digit">269</span>
+</li>
+<li>
+<span class="visitor-lable">어제</span> <span class="visitor-count digit">337</span>
+</li>
+</ul>
+</section>
+
+<!-- 티스토리 로그인 정보 -->
+<section class="module tistory-account">
+<h3>티스토리</h3>
+<div class="inner_header_layer">
+<ul class="list_toolbar">
+<li>
+<a class="icon" href="https://www.tistory.com" role="button">티스토리 홈</a>
+</li>
+<li>
+<a class="icon manage-button" href="https://theheydaze.tistory.com/manage" role="button">이 블로그 관리하기</a>
+</li>
+<li>
+<a class="icon newpost-button" href="https://theheydaze.tistory.com/manage/newpost" role="button">글쓰기</a>
+</li>
+</ul>
+</div>
+</section>
+
+</div>
+</div>
+</div>
+</div>
+</aside>
+<footer class="scrollbar-support bottom" id="footer" aria-hidden="false">
+<div class="ft-left">
+<button class="fc-icon fc-circle fc-appearance fc-button fc-subscribe ft-subscribe btn_subscription">나눔코딩 블로그 <span class="txt_state">구독하기</span></button>
+</div>
+<address class="ft-center">
+<span lang="en" class="tistory-address"><a class="fade-link" href="https://www.tistory.com" target="_blank">Powered by Tistory / Kakao.</a></span>
+<span class="copyright">&copy; THE HEYDAZE.</span>
+<span lang="en"><a class="fade-link" href="https://fraccinospace.tistory.com" target="_blank">Designed by Fraccino.</a></span>
+</address>
+<div class="ft-right">
+<button class="fc-icon fc-circle fc-appearance fc-button ft-go-to-top" data-func="go-to-top">페이지 맨 위로 올라가기</button>
+</div>
+</footer>
+
+
+<script>let
+imagesURL="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/",title="나눔코딩",blogLink="/",manageLink="https://theheydaze.tistory.com/manage",fcver="",fcverCheck="?fcver=2420",fixedSidebar="false",limitedWidth="true",articleWidth=parseInt("1980"),expandedImgWidth=parseInt("1980"),trademark="undefined",dawnTrademark="undefined",nightTrademark="undefined",coverTrademark="undefined",jacketColor="#FF5400",jacketImage="undefined",dayPageColor="#647788",dayColor="#349aff",dawnPageColor="#59656d",dawnColor="#2284d9",nightPageColor="#748a96",nightColor="#74d5ff",altCover="https://tistory4.daumcdn.net/tistory/3895287/skinSetting/5ba5b7ffe51c47f694b4d9bf886064d2",secondAltCover="https://tistory2.daumcdn.net/tistory/3895287/skinSetting/a7c1945cf7984b0c98df3270299cf0ff",thirdAltCover="https://tistory4.daumcdn.net/tistory/3895287/skinSetting/612000dc5f4f436bbea48111716b77a6",fourthAltCover="https://tistory3.daumcdn.net/tistory/3895287/skinSetting/f2800c6277bc45f8b76459fe5ee66861",dayKeyword="",dawnKeyword="",nightKeyword="",pageCoverKeyword="",fullscreenPageCoverKeyword="",disabledPageCoverKeyword="",altCoverKeyword="",secondCoverKeyword="",thirdCoverKeyword="",fourthCoverKeyword="",smallGalleryKeyword="",galleryKeyword="",largeGalleryKeyword="",posterTypeKeyword="",cardTypeKeyword="",textTypeKeyword="",hiddenTextKeyword="",showTextKeyword="",serifKeyword="",sanSerifKeyword="",tabSize=parseInt("4"),sidebarButtonColor="#A5A5A5",sidebarDawnButtonColor="transparent",sidebarNightButtonColor="transparent",sidebarHoverColor="transparent",sidebarDawnHoverColor="transparent",sidebarNightHoverColor="transparent",sidebarColor="#212121",sidebarDawnColor="transparent",sidebarNightColor="transparent",sidebarImage="undefined",sidebarDawnImage="undefined",sidebarNightImage="undefined",sidebarImgPosition="50% 50%",sidebarImgSize="cover",sidebarImgRepeat="no-repeat",sidebarTrademark="undefined",sidebarDawnTrademark="undefined",sidebarNightTrademark="undefined",naverID="undefined";</script>
+<script defer src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script.js"></script>
+<script defer src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script_sidebar.js"></script>
+<script defer src="//cdn.jsdelivr.net/gh/kaniwari/space@11.4.2r2/build/script_appearance.js"></script>
+	<!-- 진행바 -->
+
+	
+<script>
+     (function ($) {
+        $.fn.prognroll = function (options) {
+            var settings = $.extend({height: 5, color: "#50bcb6", color2: "#00ff00", deg: "90", custom: false}, options);
+            return this.each(function () {
+                if ($(this).data('prognroll')) {
+                    return false;
+                }
+                $(this).data('prognroll', true);
+                var $span = $("<span>", {class: "bar"});
+                $("#global-navigation").append($span);
+                $span.css({
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: 0,
+                    height: settings.height,
+                    background: `linear-gradient(${settings.deg}deg, ${settings.color}, ${settings.color2})`,
+                    zIndex: 9999999
+                });
+                if (settings.custom === false) {
+                    $(window).scroll(function (e) {
+                        e.preventDefault();
+                        var pageCover = $('.page-cover').height()
+                        var windowScrollTop = $(window).scrollTop();
+                        var windowHeight = $(window).outerHeight();
+                        var bodyHeight = $(document).height();
+                        var gnb_inner = $(".gnb-inner").height()
+                        var total = ((windowScrollTop - pageCover + gnb_inner)  / (bodyHeight - pageCover - windowHeight + gnb_inner)) * 100;
+                        $span.css({top: gnb_inner})
+                        $(".bar").css("width", total + "%");
+
+                    });
+                } else {
+                    $(this).scroll(function (e) {
+                        e.preventDefault();
+                        var customScrollTop = $(this).scrollTop();
+                        var customHeight = $(this).outerHeight();
+                        var customScrollHeight = $(this).prop("scrollHeight");
+                        var total = (customScrollTop / (customScrollHeight - customHeight)) * 100;
+                        $(".bar").css("width", total + "%");
+                    });
+                }
+                var windowScrollTop = $(window).scrollTop();
+                var windowHeight = $(window).outerHeight();
+                var bodyHeight = $("body").outerHeight();
+                var total = ((windowScrollTop - pageCover + gnb_inner)  / (bodyHeight - pageCover - windowHeight + gnb_inner)) * 100;
+                $(".bar").css("width", total + "%");
+            });
+        };
+    })(jQuery);
+</script>
+<script type="text/javascript">
+    $(function() {
+        $("body").prognroll({
+            height: 5,
+        		color: '#00c3ff',
+						color2: '#ffff1c',
+						deg: '90'
+        });
+			log(color=color)
+        $("body").prognroll({
+            custom: true
+        });
+    });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/styles/atom-one-dark-reasonable.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/delphi.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/php.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/r.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/ruby.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/scala.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/shell.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/sql.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/swift.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/typescript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/vbnet.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script><script src="//search1.daumcdn.net/search/statics/common/js/g/search_dragselection.min.js"></script>
+
+	<script>
+	    lightbox.option({
+			"fadeDuration": 200,
+		    "resizeDuration": 200,
+		    "wrapAround": false,
+			"albumLabel": "%1 / %2",
+			"fitImagesInViewport":true ,
+			"stopEvent": false
+	    })
+	</script>            <script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+            <script type="text/javascript">window.tiara = {"svcDomain":"user.tistory.com","section":"\uae00\ubdf0","trackPage":"\uae00\ubdf0_\ubcf4\uae30","page":"\uae00\ubdf0","key":"3895287-628","customProps":{"userId":0,"blogId":"3895287","role":"guest","filterTarget":false,"trackPage":"\uae00\ubdf0_\ubcf4\uae30","entryId":"628"},"entry":{"entryId":"628","categoryName":"9. \uc2a4\ud504\ub9c1","categoryId":"1026514","author":"4372706","authorId":"4372706","image":"4372706","plink":"\/628","tags":[],"key":"3895287-628"},"sentryDsn":"https:\/\/a53520229cd744e798d42900d76b0e2a@aem-ingest.onkakao.net\/713","kakaoAppKey":"b8aef3eeb03fa312b81795386484f051","appUserId":null};</script>
+            <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/script/tiara/tiara.min.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114" defer></script>
+                        <script type="text/javascript">
+                window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: 'tistory'}];
+            </script>
+            <script type="text/javascript" src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js" async></script><script type="text/javascript">if(window.console!=undefined){setTimeout(console.log.bind(console,"%cTISTORY","font:8em Arial;color:#EC6521;font-weight:bold"),0);setTimeout(console.log.bind(console,"%c  나를 표현하는 블로그","font:2em sans-serif;color:#333;"),0);}</script><iframe style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="//theheydaze.tistory.com/api" id="editEntry"></iframe>            <div class="#menubar menu_toolbar  toolbar_rc">
+                                            <h2 class="screen_out">티스토리툴바</h2>
+                                            <div class="btn_tool">
+                    <button class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="3895287" data-url="https://theheydaze.tistory.com" data-device="web_pc">
+                        <strong class="txt_tool_id">나눔코딩</strong>
+                        <em class="txt_state">구독하기</em>
+                        <span class="img_common_tistory ico_check_type1"></span>
+                    </button>
+                </div>
+                                       </div>
+                                       <div class="#menubar menu_toolbar "><div class='btn_tool btn_tool_type1' id='menubar_wrapper'></div></div>
+                                       <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114/blogs/script/menubar.min.js?_version_=tistory-cd415d6e47146dfa13c383527a5e8d7fcc0d6114"></script>        <div class="layer_tooltip">
+            <div class="inner_layer_tooltip">
+                <p class="desc_g"></p>
+            </div>
+        </div>
+        </body>
+</html>

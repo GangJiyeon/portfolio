@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+    
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        $( document ).ready( function() {
+            var Offset = $("#header_area").offset();
+            $( window ).scroll( function() {
+                if ( $( document ).scrollTop() > Offset.top ) {
+                    $("#header_area").addClass( 'Fixed' );
+                    $("#section1").css('padding-top', '117px');
+                }
+                else {
+                    $("#header_area").removeClass( 'Fixed' );
+                    $("#section1").css('padding-top', '0px');
+
+                }
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <div id="header_area" style="padding: 20px 0px;" >
+        <div class="container" >
+            <header class="d-flex flex-wrap justify-content-center py-3  ">
+                <a href="/main.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                  <svg class="bi" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="font" style="font-size: 30px;">PORTFOLIO</span>
+                </a>
+        
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="main.html" class="nav-link font">ABOUT ME</a></li>
+                    <li class="nav-item"><a href="skills.html" class="nav-link font">SKILLS</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link font">PROJECT</a></li>
+                </ul>
+            </header>
+        </div>
+    </div>
+
+    <div id="section1">
+        <div class="container gap section gap1" >
+            <div class="title fw-light">
+                <i class="bi bi-search"></i>
+                <span class="font">ABOUT ME</span>
+            </div>
+            <div class="flex_wrapper border two_div" id="introducd">
+                <div class="border2" id="introduce">
+                    <img src="/img/짱구~.jpeg">
+                    나는~~ 개똥벌레~~~~~
+                    <br>
+                    나는~~ 개똥벌레~~~~~
+                    <br>
+                    나는~~ 개똥벌레~~~~~
+                    <br>
+                    나는~~ 개똥벌레~~~~~
+                    <br>
+                </div>
+                <div class="flex_item">
+                    <div>
+                        <div class="title2">
+                            about me
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="li">
+                                    <div class="font_color">name</div><div>강지연</div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li"><div class="font_color">email</div><div>wldus23966@naver.com</div></div>
+                            </li>
+                            <li>
+                                <div class="li"> <div class="font_color">phone</div><div>010-3574-7494</div></div>
+                            </li>
+                            <li>
+                                <div class="li"> <div class="font_color">addr</div><div>부산광역시 진구 서면로 10</div></div>
+                            </li>
+                            <li>
+                                <div class="li"><div class="font_color">age</div><div>22</div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="title2">
+                            blog
+                        </div>
+                        <div>
+                                <a href="https://blog.naver.com/wldus23966">
+                                    <div class="border2">
+                                        네이버 블로그
+                                    </div>
+                                </a>
+                                <a href="https://github.com/GangJiyeon">
+                                    <div class="border2">
+                                        깃허브
+                                    </div>
+                                </a>
+                                <a href="https://hell0w0rld-0614.tistory.com">
+                                    <div class="border2">
+                                        티스토리
+                                    </div>
+                                </a>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div class="title2"> history</div>
+                        <ul>
+                            <li>
+                                <div class="li"><div class="font_color">2020.02</div><div>구산고등학교 졸업</div> </div>
+                            </li>
+                            <li>
+                                <div class="li"><div class="font_color">2021.12</div><div>부산대학교 자퇴</div> </div>
+                            </li>
+                            <li>
+                                <div class="li"> <div class="font_color">2022.08</div><div>메가it 웹 개발 취업반 4기 수료</div></div>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                   
+                    <div>
+                        <div class="title2">
+                           primary skills
+                        </div>
+                        <img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> 
+                        <img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> 
+                        <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScriipt-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"/> 
+                        <img alt="Python" src ="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/> 
+                        <img alt="Flutter" src ="https://img.shields.io/badge/Flutter-02569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white"/> 
+                        <img alt="Android" src ="https://img.shields.io/badge/Android-3DDC84.svg?&style=for-the-badge&logo=Android&logoColor=black"/>
+                        <a href = "https://github.com/Hun-Se">
+                            <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
+                        </a> 
+                        <a href = "https://for-it-study.tistory.com/"> 
+                            <img alt="Tistory" src ="https://img.shields.io/badge/Tistory-white.svg?&style=for-the-badge"/>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                
+            
+            </div>
+        </div>
+    
+    </div>
+    
+    <div id="section2">
+        <div class="container gap gap2">
+            <div class="title fw-light" style="color: whitesmoke;">
+                <i class="bi bi-search"></i>
+                <span class="font">SKILLS</span>
+                <button>자세히 보기</button>
+            </div>
+            <div class="two_div ">
+                <div class="album">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="border max_516">
+                                    <div class="title2">
+                                        Back-end
+                                     </div>
+                                    <div class="li">
+                                        <div>Java</div>
+                                        <div>Java<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Spring</div>
+                                        <div>Spring Framework<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Spring</div>
+                                        <div>Spring MVC<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>JSP</div>
+                                        <div>JSP<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Servlet</div>
+                                        <div>Servlet<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>ajax</div>
+                                        <div>ajax<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="border max_516">
+                                    <div class="title2">
+                                        Server
+                                     </div>
+                                    <div class="li">
+                                        <div>Git</div>
+                                        <div>Git<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>dd</div>
+                                        <div>Github Desktop<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col">
+                                <div class="border max_516">
+                                    <div class="title2">
+                                        Front-end
+                                     </div>
+                                     <div class="li">
+                                        <div>HTML5</div>
+                                        <div>HTML5<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>CSS</div>
+                                        <div>CSS<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Jquery</div>
+                                        <div>Jquery<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Java Script</div>
+                                        <div>Git<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Bootstrap</div>
+                                        <div>Git<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border max_516">
+                                    <div class="title2">
+                                        DB
+                                     </div>
+                                     <div class="li">
+                                        <div>MariaDB</div>
+                                        <div>MariaDB<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Mysql</div>
+                                        <div>Mysql<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="border max_516">
+                                    <div class="title2">
+                                        Version Control
+                                     </div>
+                                    <div class="li">
+                                        <div>Git</div>
+                                        <div>Git<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Github Desktop</div>
+                                        <div>Github Desktop<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="border max_516">
+                                    <div class="title2">
+                                        Tool
+                                     </div>
+                                    <div class="li">
+                                        <div>DBeaver</div>
+                                        <div>DBeaver<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>Heidsql</div>
+                                        <div>Heidsql<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>InteliJ</div>
+                                        <div>InteliJ<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>eclips</div>
+                                        <div>eclips<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                                    <div class="li">
+                                        <div>postman</div>
+                                        <div>postman<br>
+                                            다양한 프로젝트를 진행하면서 기본적으로 사용한 언어입니다. 
+                                            프로그래밍을 접한 이후 매일 매일 사용한 언어인 만큼 실제 업무에서 사용하기에 무리가 없다고 생각??? ㅋㅋ ㅠ
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                 
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="section3">
+        <div class="container gap gap2" id="project">
+            <div>
+              <div class="title fw-light">
+                <i class="bi bi-search"></i>
+                  <span class="font">PROJECT</span>
+              </div>
+            </div >
+              <div class="album">
+                  <div class="container border">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                      <div class="col">
+                          <div class="card shadow-sm">
+                              <img src="/img/포폴용프로젝트_Z_메인.png" width="100%" height="225">
+                              <div class="card-body">
+                                  <h5>스케줄 관리 웹사이트</h4>
+                                  <p class="card-text">일정을 등록하고 알림 서비스를 받으세요! 챌린지를 통해 환급도 받고 습관도 만들고</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <a href="/todo.html">
+                                          <div class="btn-group">
+                                              <button type="button" class="btn btn-sm btn-outline-secondary">자세히 보기</button>
+                                          </div>
+                                      </a>
+                                      <small class="text-muted">9 mins</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+        
+                      <div class="col">
+                          <div class="card shadow-sm">
+                              <img src="/img/포폴용프로젝트_Z_메인.png" width="100%" height="225">
+                              <div class="card-body">
+                                  <h5>환전 사이트</h4>
+                                  <p class="card-text">환전 알림, 환율 계산, 환율정보 조회, 근데 밤에는 사용을 못함 ㅠㅠ</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <a href="/money.html">
+                                          <div class="btn-group">
+                                              <button type="button" class="btn btn-sm btn-outline-secondary">자세히 보기</button>
+                                          </div>
+                                      </a>
+                                      <small class="text-muted">9 mins</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+        
+                      <div class="col">
+                          <div class="card shadow-sm">
+                              <img src="/img/포폴용프로젝트_Z_메인.png" width="100%" height="225">
+                              <div class="card-body">
+                                  <h5>환경 MBTI</h4>
+                                  <p class="card-text">환경 MBTI 테스트 하기, 로딩을 기다리는 동안 대기정보, 미세먼지 정보를 확인하세요</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <a href="/mbti.html">
+                                          <div class="btn-group">
+                                              <button type="button" class="btn btn-sm btn-outline-secondary">자세히 보기</button>
+                                          </div>
+                                      </a>
+                                      <small class="text-muted">9 mins</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+        
+                      <div class="col">
+                          <div class="card shadow-sm">
+                              <img src="/img/포폴용프로젝트_Z_메인.png" width="100%" height="225">
+                              <div class="card-body">
+                                  <h5>BBQ 몰</h4>
+                                  <p class="card-text">프론트앤드를 공부하는 겸 BBQ몰을 클론코딩해보았습니다. </p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                          <button type="button" class="btn btn-sm btn-outline-secondary">자세히 보기</button>
+                                      </div>
+                                      <small class="text-muted">9 mins</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+        
+                      <div class="col">
+                          <div class="card shadow-sm">
+                              <img src="/img/포폴용프로젝트_Z_메인.png" width="100%" height="225">
+                              <div class="card-body">
+                                  <h5>포트폴리오 사이트</h4>
+                                  <p class="card-text">전하고자 하는 내용을 효과적으로 전달하기 위해 포트폴리오 사이트를 만들었다</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <a href="/main.html">
+                                          <div class="btn-group">
+                                              <button type="button" class="btn btn-sm btn-outline-secondary">자세히 보기</button>
+                                          </div>
+                                      </a>
+                                      <small class="text-muted">9 mins</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+        
+              
+                    </div>
+                  </div>
+                </div>
+          </div>
+      
+    </div>
+    
+  </div>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#">깃허브</a></li>
+          <li class="ms-3"><a class="text-muted" href="#">블로그</a></li>
+          <li class="ms-3"><a class="text-muted" href="#">티스토리</a></li>
+        </ul>
+      </footer>
+    </div>
+</body>
+</html>
