@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강지연's PORTFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    
+    <link rel="stylesheet" href="/css/test.css">
+    <style>
+        
+        @font-face {
+                font-family: 'NEXON Lv2 Gothic';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GangwonEdu_OTFBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px 0px 0px 20px;
+        }
+
+    </style>
+    <script>
+        $(document).ready( function() {
+            $('.slider').bxSlider()
+            $(".dropdown").on("click", function(){
+                let status = $(this).children("div").attr('class');
+
+                if(status=="div_none"){
+                    $(this).children("div").removeClass("div_none");
+                    $(this).children("div").css('display', 'block');
+                }
+                if(status!="div_none"){
+                    $(this).children("div").addClass("div_none");
+                    $(this).children("div").css('display', 'none');
+                }
+            });
+		});
+    </script>
+</head>
+<body>
+<div class="side_menu" >
+    <div><a href="main.html" class="nav-link  "><i class="bi bi-house"></i></a></div>
+    <hr style="margin: 0;">
+    <div><a href="about_me.html" class="nav-link  scroll_move"><i class="bi bi-person-circle"></i></a></div>
+    <hr style="margin: 0;">
+    <div><a href="my_skills.html" class="nav-link  scroll_move"><i class="bi bi-tools"></i></a></div>
+    <hr style="margin: 0;">
+    <div><a href="my_project.html" class="nav-link  scroll_move"><i class="bi bi-archive"></i></a></div>
+</div>
+
+    <div style="height: 100vh;">
+        <div class="container" style="font-size: 30px; text-align: center; padding-top: 30px; ">
+            지연's PORTFOLIO
+        </div>
+        <div style="margin:auto;" class="container ">
+            <div class="border container" style="box-shadow: 2px 2px 10px #bababa;" id="section">
+                <div id="section1" style="height:100%;">
+                    <div class="two_div" style="height:100%;">
+                        <div class="div_padding" id="introduce" style="height:100%; overflow: scroll;">
+                            <div >
+                                <div style="padding: 30px; margin: 20px 0px 0px 0px;">
+                                    <img src="/img/내사진.png" style="border-radius: 50%; border: solid white 3px;" >
+                                </div>
+                                
+                                <div class="title2" style="color: white; text-align:center;">
+                                    강지연's PORTFOLIO
+                                    <hr>
+                                    <div class="" style="padding: 5px !important;">
+                                        <div>wldus23966@naver.com</div>
+                                        <div>010-3574-7494</div>
+                                        <div>부산광역시 진구 서면로 10</div>
+                                        <div>22살, 백엔드 개발자</div>
+                                    </div>
+                                    <hr>
+                                    <a href="https://github.com/GangJiyeon" class="white">깃허브</a>
+                                    <a href="https://blog.naver.com/wldus23966" class="white">블로그</a>
+                                    <a href="https://hell0w0rld-0614.tistory.com" class="white">티스토리</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_item div_padding" style="overflow:scroll;">
+                            <div style="font-size: 25px; " class="section1" id="summary">
+                                기술스택 / 자격증
+                                <hr style="margin-top: 5px; ">
+                            </div>
+                            <div style="height: 93%; overflow: scroll; scrollbar-width: none;">
+                                <div>
+                                    <div class="title2">
+                                        기술스택
+                                    </div>
+                                    <div>
+                                        <table class="tg" style="margin-top: 5px;">
+                                            <thead>
+                                                <tr>
+                                                <th class="gap_white">분류</th>
+                                                <th class="">내용</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="tg-0lax">언어</td>
+                                                    <td class="tg-0lax">
+                                                        <img alt="Java" src ="https://img.shields.io/badge/Java-4479A1.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
+                                                        <img alt="python" src ="https://img.shields.io/badge/python-3776AB.svg?&style=for-the-badge&logo=python&logoColor=white"/> 
+                                                        <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/> 
+                                                        <img alt="Servlet" src ="https://img.shields.io/badge/Servlet-FF9933.svg?&style=for-the-badge&logo=Servlet&logoColor=white"/> 
+                                                        <img alt="JSP" src ="https://img.shields.io/badge/JSP-FF9933.svg?&style=for-the-badge&logo=JSP&logoColor=white"/> 
+                                                        <img alt="Ajax" src ="https://img.shields.io/badge/Ajax-4479A1.svg?&style=for-the-badge&logo=Ajax&logoColor=white"/> 
+                                                        <img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> 
+                                                        <img alt="Css" src ="https://img.shields.io/badge/CSS3-FF9933.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> 
+                                                   
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="tg-0lax">데이터베이스</td>
+                                                    <td class="tg-0lax">
+                                                        <img alt="MySQL" src ="https://img.shields.io/badge/MySQL-4479A1.svg?&style=for-the-badge&logo=MySQL&logoColor=white"/> 
+                                                        <img alt="MariaDB" src ="https://img.shields.io/badge/MariaDB-003545.svg?&style=for-the-badge&logo=MariaDB&logoColor=white"/> 
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tg-0lax">서버</td>
+                                                    <td class="tg-0lax"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tg-0lax">프레임워크</td>
+                                                    <td class="tg-0lax">
+                                                        <img alt="Spring" src ="https://img.shields.io/badge/Spring MVC-6DB33F.svg?&style=for-the-badge&logo=Spring&logoColor=white"/> 
+                                                        <img alt="flask" src ="https://img.shields.io/badge/flask-000000.svg?&style=for-the-badge&logo=flask&logoColor=white"/> 
+                                                        <img alt="Bootstrap" src ="https://img.shields.io/badge/Bootstrap-7952B3.svg?&style=for-the-badge&logo=Bootstrap&logoColor=white"/> 
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tg-0lax">라이브러리</td>
+                                                    <td class="tg-0lax">
+                                                        <img alt="jQuery" src ="https://img.shields.io/badge/jQuery-0769AD.svg?&style=for-the-badge&logo=jQuery&logoColor=white"/> 
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <div class="title2">
+                                        자격증
+                                    </div>
+                                    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; ">
+                                        <div class="bg_light">
+                                            sqld
+                                            <ul>
+                                                <li>2024년 3월 취득</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="bg_light">
+                                            DAsP
+                                            <ul>
+                                                <li>서블릿 생명주기의 이해</li>
+                                                <li>서블릿 객체간의 관계를 이해한 코드 구현</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg_light">
+                                            ADsP
+                                            <ul>
+                                                <li>jsp 생명주기의 이해</li>
+                                                <li>태그, 내장객체를 활용한 동적컨텐츠 생성</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; ">
+                                        <div class="bg_light">
+                                            빅데이터 분석 기사
+                                            <ul>
+                                                <li>2024년 3월 취득</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="bg_light">
+                                            정보 처리 기사
+                                            <ul>
+                                                <li>서블릿 생명주기의 이해</li>
+                                                <li>서블릿 객체간의 관계를 이해한 코드 구현</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg_light">
+                                            TOPCIT
+                                            <ul>
+                                                <li>jsp 생명주기의 이해</li>
+                                                <li>태그, 내장객체를 활용한 동적컨텐츠 생성</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; ">
+                                        <div class="bg_light">
+                                            토익
+                                            <ul>
+                                                <li>2023년 12월 취득</li>
+                                                <li>950점</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg_light">
+                                            토익 스피킹
+                                            <ul>
+                                                <li>태그를 활용한 마크업</li>
+                                                <li>css 라이브러리(부트스트랩) 사용</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="bg_light">
+                                            토플
+                                            <ul>
+                                                <li>EC2를 활용한 클라우드 구축</li>
+                                                <li>기본적인 Linux 언어 사용가능</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                   
+
+                                    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; ">
+                                        
+                                        <div class="bg_light">
+                                            컴퓨터 활용능력 1급
+                                            <ul>
+                                                <li>2023년 12월 취득</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg_light">
+                                            운전면허 ㅋㅋㅋ ㅠ
+                                            <ul>
+                                                <li>라이브러리 활용 및 커스터마이징</li>
+                                                <li>ajax를 이용한 비동기 통신</li>
+                                            </ul>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+      
+    
+    
+    
+    
+    
+    
+    
+   
+    
+</body>
+</html>

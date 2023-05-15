@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강지연's PORTFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="/css/test.css">
+    <style>
+        @font-face {
+            font-family: 'NEXON Lv2 Gothic';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GangwonEduPowerExtraBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GangwonEdu_OTFBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        $(document).ready( function(e) {
+            $('.slider').bxSlider()
+
+    
+            $(".dropdown").on("click", function(){
+
+                
+                let status = $(this).children("div").attr('class');
+
+                if(status=="div_none"){
+                    $(this).children("div").removeClass("div_none");
+                    $(this).children("div").css('display', 'block');
+                }
+
+                if(status!="div_none"){
+                    $(this).children("div").addClass("div_none");
+                    $(this).children("div").css('display', 'none');
+
+                }
+
+            });
+		}); 
+    </script>
+</head>
+<body>
+    <div class="side_menu" >
+        <div><a href="main.html" class="nav-link  "><i class="bi bi-house"></i></a></div>
+        <hr style="margin: 0;">
+        <div><a href="about_me.html" class="nav-link  scroll_move"><i class="bi bi-person-circle"></i></a></div>
+        <hr style="margin: 0;">
+        <div><a href="my_skills.html" class="nav-link  scroll_move"><i class="bi bi-tools"></i></a></div>
+        <hr style="margin: 0;">
+        <div><a href="my_project.html" class="nav-link  scroll_move"><i class="bi bi-archive"></i></a></div>
+    </div>
+
+    <div style="height: 100vh;">
+        <div class="container" style="font-size: 30px; text-align: center; padding-top: 30px; ">
+            지연's PORTFOLIO
+        </div>
+        <div style="margin:auto;" class="container ">
+            <div class="border container" style="box-shadow: 2px 2px 10px #bababa;" id="section">
+                <div id="section1" style="height:100%;">
+                    <div style="height:100%;">
+                    
+                        <div class="flex_item div_padding" style="overflow:scroll; height: 100%;">
+                            <div class="section1" id="summary"s>
+                                <div style="font-size: 25px">
+                                    <span>ME(Money Exchange)</span>
+                                </div>
+                                <hr style="margin: 7px 0px;">
+                            </div>
+                            <div class="" style="height: 93%; overflow: scroll;">
+                            <div class="title2">요약</div>
+                            <div class="border2">
+                                <div>기획의도</div>
+                                <div>
+                                    코로나가 완화되면서 해외여행, 유학 등 국내외를 오가는 유동인구가
+                                     다시 증가하고 있을 뿐더러, 투자에 대한 사람들의 관심이 증가하고 있습니다<br>
+                                    이러한 추세에 맞게 사람들에게 쉽게 환율 정보를 알려주고, 
+                                    대략적인 환전 금액을 조회할 수 있는 웹사이트을 만들었습니다
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="li">
+                                            <div>개발기간</div>
+                                            <div>2022.09.17 - 2022.09.25</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li">
+                                            <div>소스코드</div>
+                                            <div><a href="https://github.com/seongsinhye/moneyexchange">BBQ 깃허브 바로가기</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li">
+                                            <div>도메인</div>
+                                            <div><a href="">환전사이트 바로가기</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li">
+                                            <div>멤버</div>
+                                            <div>팀 프로젝트(2인)</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <hr>
+                            <div class="title2" id="video">
+                                개발목표
+                            </div>
+                            <div>
+                                <div>
+                                    - 데이터 조회 후 결과 반환까지의 소요시간 단축
+                                </div>
+                                <div>
+                                    - 공공 데이터 포털의 오픈 api의 JSON 데이터 파싱
+                                </div>
+                                <div>
+                                    - 공공데이터 API를 활용해 실시간 환율정보 조회하기
+                                </div>
+                                <div>
+                                    - 인터셉터를 이용한 권한 별 접근 제어
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="title2" id="primary">
+                                주요기능 + 담당 역할 및 성과
+                            </div>
+                                
+                            <ul>
+                                <li class="dropdown">권한 별 접근제어
+                                    <div class="div_none">hello</div>
+                                </li>
+                                <li class="dropdown">전체 환율 정보 조회
+                                    <div class="div_none">hello</div>
+                                </li>
+                                <li class="dropdown">환율 계산
+                                    <div class="div_none">hello</div>
+                                </li>
+                                <li class="dropdown">결제
+                                    <div class="div_none">hello</div>
+                                </li>
+                                <li class="dropdown">회원관리
+                                    <div class="div_none">hello</div>
+                                </li class="dropdown">
+                                <li class="dropdown">공지사항
+                                    <div class="div_none">hello</div>
+                                </li>
+                            </ul>
+                            <table class="tg">
+                                <thead>
+                                  <tr>
+                                    <th class="gap_white">분류</th>
+                                    <th class="gap_white">강지연</th>
+                                    <th class="">성신혜</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tg-0lax">기능구현</td>
+                                        <td class="tg-0lax">로그인 / 로그아웃 / 회원가입 / 회원정보수정 /<br>
+                                            회원탈퇴  / 인터셉터 / 환율정보 계산 </td>
+                                        <td class="tg-0lax">공지사항 목록 / 공지사항 상세 / 공지사항 작성 / <br>
+                                             공지사항 수정 / 공지사항 삭제 / 전체 환율 조회 / 통화별 환율조회</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-0lax">프론트</td>
+                                        <td class="tg-0lax">기본 틀 구성 / css 각자 적용</td>
+                                        <td class="tg-0lax">기본 틀 구성 / css 각자 적용</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-0lax">API</td>
+                                        <td class="tg-0lax">이니시스 본인인증(rest api) / 공공데이터 포털 환율정보 조회(open api) / 결제(rest api)</td>
+                                        <td class="tg-0lax">공공데이터 포털 환율정보 조회(open api)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-0lax">기타</td>
+                                        <td class="tg-0lax">서버</td>
+                                        <td class="tg-0lax">서버</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            <hr>
+                            <div class="title2" id="ref">
+                                레퍼런스 문서(기능설명/인터페이스 문서/DB 설계서/시퀀스 다이어그램)
+                            </div>
+                            
+                            <div id="slideimgs" class="slide_wrap">
+                                <div id="changeImages" class="slider">
+                                    <div class="sliderImg ">
+                                        <img src="/img/환전_레퍼런스/001.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/002.jpg" alt="">
+                                    </div> 
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/003.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/004.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/005.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/006.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/007.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/008.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/009.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/010.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/011.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/012.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/013.jpg" alt="">
+                                    </div>
+                                    <div class="sliderImg">
+                                        <img src="/img/환전_레퍼런스/014.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            
+                            <hr>
+                            
+                        </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+      
+    
+    
+    
+    
+    
+    
+    
+   
+    
+</body>
+</html>

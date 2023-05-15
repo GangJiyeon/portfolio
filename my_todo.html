@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강지연's PORTFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="/css/test.css">
+    <style>
+        @font-face {
+            font-family: 'NEXON Lv2 Gothic';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GangwonEduPowerExtraBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GangwonEdu_OTFBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        $(document).ready( function(e) {
+            $('.slider').bxSlider()
+
+            $(".dropdown").on("click", function(){
+                let status = $(this).children("div").attr('class');
+
+                if(status=="div_none"){
+                    $(this).children("div").removeClass("div_none");
+                    $(this).children("div").css('display', 'block');
+                }
+
+                if(status!="div_none"){
+                    $(this).children("div").addClass("div_none");
+                    $(this).children("div").css('display', 'none');
+
+                }
+            });
+		});  
+    </script>
+</head>
+<body>
+<div class="side_menu" >
+    <div><a href="main.html" class="nav-link  "><i class="bi bi-house"></i></a></div>
+    <hr style="margin: 0;">
+    <div><a href="about_me.html" class="nav-link  scroll_move"><i class="bi bi-person-circle"></i></a></div>
+    <hr style="margin: 0;">
+    <div><a href="my_skills.html" class="nav-link  scroll_move"><i class="bi bi-tools"></i></a></div>
+    <hr style="margin: 0;">
+    <div><a href="my_project.html" class="nav-link  scroll_move"><i class="bi bi-archive"></i></a></div>
+</div>
+
+    <div style="height: 100vh;">
+        <div class="container" style="font-size: 30px; text-align: center; padding-top: 30px; ">
+            지연's PORTFOLIO
+        </div>
+        <div style="margin:auto;" class="container ">
+            <div class="border container" style="box-shadow: 2px 2px 10px #bababa;" id="section">
+                <div id="section1" style="height:100%;">
+                    <div style="height:100%;">
+                    
+                        <div class="flex_item div_padding" style="overflow:scroll; height: 100%;">
+                            <div class="section1" id="summary"s>
+                                <div style="font-size: 25px" class="title">
+                                    <span class="title">PLANNERZ</span>
+                                </div>
+                                <hr style="margin: 7px 0px 15px 0px;">
+                            </div>
+                            <div class="" style="height: 93%; overflow: scroll;">
+                            <div class="title2">요약</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                <div>
+                                    <img src="/img/투두.png" style="width: 100%;">
+                                </div>
+                                <div>
+                                    <div class="border2">
+                                        <div>기획의도</div>
+                                        <div>
+                                            사람들의 수요에 비해 제대로된 일정관리 웹사이트가 적어 제작하게 된 웹사이트 입니다.<br>
+                                            특히 스케줄을 효율적으로 관리하고, 관리하는 습관을 기를 수 있는 웹 사이트를 만들고자 노력하였습니다. <br> 
+                                            여러 기능을 추가하고, 프로젝트를 개선해나가면서 2023년이 되기 전 실제로 서비스하는 것을 목표로 하고 있습니다.
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="li">
+                                                <div>개발기간</div>
+                                                <div>2022.08.10 - 2022.10.06</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li">
+                                                <div>소스코드</div>
+                                                <div><a href="https://github.com/GangJiyeon/plannerz">PLANNERZ 깃허브 바로가기</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li">
+                                                <div>도메인</div>
+                                                <div><a href="">PLANNERZ 바로가기</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li">
+                                                <div>멤버</div>
+                                                <div>개인 프로젝트(1인)</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li">
+                                                <div>개발상태</div>
+                                                <div>완료 후 배포, 기능 추가 중</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                            <hr>
+                            <div class="title2" id="video">
+                                개발목표
+                            </div>
+                            <div>
+                                <div>
+                                    - sns 로그인 api(naver, kakao)를 이용한 간편한 가입과 이용
+                                </div>
+                                <div>
+                                    - 갯수제한 없이 직관적인 사용이 가능한 투두리스트, 프로젝트 관리기능 제공
+                                </div>
+                                <div>
+                                    - jquery fullCalendar 플러그인 활용해 일정관리 기능을 시각적으로 제공
+                                </div>
+                                <div>
+                                    - sms 알림 rest api를 활용해 스케줄 작성 알림, 스케줄 체크 알림, 스케줄 알림 기능을 제공한 효율정인 일정관리
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            <div class="title2" id="primary">
+                                이슈
+                            </div>
+                            <ul>
+                                <li class="dropdown">jquery croppers.js 추가 예정</li>
+                                <li class="dropdown">chart.js 플러그인을 활용한 통계 기능 추가 예정</li>
+                                <li class="dropdown">정해진 시간마다 메세지 발송(@scheduled)</li>
+                                <li class="dropdown">스터디 플래너 기능 추가 예정</li>
+                                <li class="dropdown">메인페이지 검색 기능 추가 예정</li>
+                            </ul>
+                            <hr>
+                            <div class="title2" id="primary">
+                                주요기능 <span>(기능을 클릭하면 자세히 볼 수 있어요)</span>
+                            </div>
+                                
+                            <ul>
+                                <li class="dropdown">회원관리  
+                                    <div class="div_none">
+                                        전체기능 : 로그인, 로그아웃, 정보조회, 회원가입, 회원탈퇴, 아이디/비밀번호 찾기, sns 로그인, 본인인증
+                                        <hr>
+                                        - sns login rest api(naver, kakao)를 활용한 간편 회원가입
+                                        <ul>
+                                            <li>rest api의 난수 생성 전 데이터를 파싱해 등록되지 않은 계정일 경우 해당 사이트의 아이디 파라미터 값에 맞는 random_id 생성</li>
+                                            <img style="max-width: 600px; margin: 20px;" src="/img/투두/랜덤아이디체크.png"><br>
+                                            <img style="max-width: 700px; margin: 20px;" src="/img/투두/랜덤메서드.png"><br>
+                                            <li>생성한 random_id와 sns_id를 sns테이블에 저장한 후, api에서 제공받은 회원정보와 random_id를 회원 테이블에 저장</li>
+                                            <img style="max-width: 800px; margin: 20px;" src="/img/투두/sns가입.png"><br>
+                                        </ul>
+                                        - kg inicis rest api를 활용한 간편 본인인증<br>
+                                        - session에 저장된 sns계정(kakao, naver, none)에 따른 아이디, 비밀번호 찾기 기능 제공<br>
+                                     </div>
+                                </li>
+                                <li class="dropdown">투두리스트
+                                    <div class="div_none">
+                                        전체기능 : 투투리스트 조회/작성/수정/삭제, 투두리스트 아이템 삭제
+                                        <hr>
+                                        - 외래키를 사용해 TODOLIST_TB, TODOLIST_ITEM_TB 테이블을 참조시켜 데이터 중복을 최소화<br>
+                                        <img style="max-width: 400px; margin: 20px;" src="/img/투두/투두디비.png"><br>
+                                        - ArrayList와 향상된 for문을 통해 참조테이블의 데이터를 조회한 후 뷰로 전송<br>
+                                        - c:if 태그와 jquery를 활용한 뷰 구성<br>
+                                    </div>
+                                </li>
+                                <li class="dropdown">프로젝트
+                                    <div class="div_none">
+                                        전체기능 : 프로젝트 조회/작성/수정/삭제, 소프로젝트 삭제, 프로젝트 아이템 삭제
+                                        <hr>
+                                        - 외래키를 사용해 PROJECT_TB, PROJ_MID_TB, PROJ_ITEM_TB 테이블을 참조시켜 데이터 중복을 최소화<br>
+                                        <img style="max-width: 500px; margin: 20px;" src="/img/투두/프로젝트디비.png"><br>
+                                        - ArrayList와 향상된 for문을 통해 참조테이블의 데이터를 조회한 후 뷰로 전송<br>
+                                        <img style="max-width: 700px; margin: 20px;" src="/img/투두/프로젝트코드.png"><br>
+                                        - c:if 태그와 jquery를 활용한 뷰 구성<br>
+                                        - css 'overflow: scroll'를 활용해 div 요소 구성
+                                    </div>
+                                </li>
+                                <li class="dropdown">캘린더
+                                    <div class="div_none">
+                                        전체기능 : 일정 조회, 일정 수정, 일정 삭제, 일정 추가
+                                        <hr>
+                                        - jquery fullCalendar 플러그인 활용한 view 페이지 및 기능 구성<br>
+                                        <ul>
+                                            <li>커스덤 버튼을 활용한 헤더구성 및 일정 추가 기능 구현</li>
+                                            <img style="max-width: 600px; margin: 20px;" src="/img/투두/달력코드.png"><br>
+                                        </ul>
+                                    </div>
+                                </li >
+                                <li class="dropdown">알림
+                                    <div class="div_none">
+                                        전체기능 : 사용자 알림 설정 조회, 알림 설정 수정, 스케줄 작성 알림, 스케줄 체크 알림, 일정 알림
+                                        <hr>
+                                        - naver cloud platform의 sms rest api를 활용한 sms 전송<br>
+                                        <ul>
+                                            <li>시그니처(공통 헤더 마지막 필드(x-ncp-apigw-signature-v2)에 들어가는 값) 생성 <br>
+                                                -> 요청에 맞게 StringToSign을 생성하고 SecretKey로 HmacSHA256 알고리즘으로 암호화한 후 Base64로 인코딩<br>
+                                                -> 인코딩한 값을 x-ncp-apigw-signature-v2로 사용
+                                                <img style="max-width: 800px; margin: 20px;" src="/img/투두/메세지코드1.png"><br>
+                                            </li>
+                                            <li>메시지 발송<br>
+                                                -> 요청 url 구성<br>
+                                                -> 요청 body 구성<br>
+                                                -> sms 메세지 발송<br>
+                                                <img style="max-width: 800px; margin: 20px;" src="/img/투두/메세지코드2.png"><br>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">게시판
+                                    <div class="div_none">
+                                        전체기능 : 전체/상세/내가 쓴 글 조회, 게시글 수정/삭제/등록, 조회수, 게시글/댓글 좋아요,  댓글 수정/삭제/조회/등록, 대댓글 작성/삭제
+                                        <hr>
+                                        - 전체 게시글 조회 페이지네이션 적용<br>
+                                        - content 높이를 일정하게 유지하기 위해 이미지의 가로 넓이를 측정한 후 최대 세로 길이 지정<br>
+                                        -> 이미지 세로 길이가 가로 넓이보다 짧은 경우 이미지 위 아래 여백을 줌<br>
+                                        -> croppers.js 플러그인을 사용해 이미지 편집 기능 제공 예정<br>
+                                        <img style="max-width: 500px; margin: 20px;" src="/img/투두/게시판이미지높이.png"><br>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                                
+                            <hr>
+                            <div class="title2" id="primary">
+                                기술 스택
+                            </div>
+                            <table class="tg">
+                                <thead>
+                                  <tr>
+                                    <th class="gap_white">분류</th>
+                                    <th class="">내용</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="tg-0lax">백앤드</td>
+                                    <td class="tg-0lax">
+                                        <img alt="Java" src ="https://img.shields.io/badge/Java-4479A1.svg?&style=for-the-badge&logo=Java&logoColor=white"/> 
+                                        <img alt="Spring" src ="https://img.shields.io/badge/Spring MVC-6DB33F.svg?&style=for-the-badge&logo=Spring&logoColor=white"/> 
+                                        <img alt="JSP" src ="https://img.shields.io/badge/JSP-FF9933.svg?&style=for-the-badge&logo=JSP&logoColor=white"/> 
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-0lax">프론트앤드</td>
+                                    <td class="tg-0lax">
+                                        <img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> 
+                                        <img alt="Css" src ="https://img.shields.io/badge/CSS3-FF9933.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> 
+                                        <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/> 
+                                        <img alt="jQuery" src ="https://img.shields.io/badge/jQuery-0769AD.svg?&style=for-the-badge&logo=jQuery&logoColor=white"/> 
+                                        <img alt="Bootstrap" src ="https://img.shields.io/badge/Bootstrap-7952B3.svg?&style=for-the-badge&logo=Bootstrap&logoColor=white"/> 
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-0lax">데이터베이스</td>
+                                    <td class="tg-0lax">
+                                        <img alt="MySQL" src ="https://img.shields.io/badge/MySQL-4479A1.svg?&style=for-the-badge&logo=MySQL&logoColor=white"/> 
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-0lax">서버</td>
+                                    <td class="tg-0lax">
+                                        <img alt="Amazon EC2" src ="https://img.shields.io/badge/Amazon EC2-FF9900.svg?&style=for-the-badge&logo=Amazon EC2&logoColor=white"/>
+                                        <img alt="Apache Tomcat
+                                        " src ="https://img.shields.io/badge/Apache Tomcat-F8DC75.svg?&style=for-the-badge&logo=Apache Tomcat&logoColor=white"/> 
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-0lax">버전관리</td>
+                                    <td class="tg-0lax"> 
+                                        <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
+                                        <img alt="GitHub" src ="https://img.shields.io/badge/GitHub desktop-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
+                                        <img alt="IntelliJ IDEA" src ="https://img.shields.io/badge/IntelliJ IDEA-0071C5.svg?&style=for-the-badge&logo=IntelliJ IDEA&logoColor=white"/>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tg-0lax">tool</td>
+                                    <td class="tg-0lax">
+                                        <img alt="IntelliJ IDEA" src ="https://img.shields.io/badge/IntelliJ IDEA-0071C5.svg?&style=for-the-badge&logo=IntelliJ IDEA&logoColor=white"/>
+                                        <img alt="DBeaver" src ="https://img.shields.io/badge/DBeaver-4479A1.svg?&style=for-the-badge&logo=DBeaver&logoColor=white"/> 
+                                        <img alt="Postman" src ="https://img.shields.io/badge/Postman-FF6C37.svg?&style=for-the-badge&logo=Postman&logoColor=white"/> 
+                                        <img alt="VScode" src ="https://img.shields.io/badge/VScode-0769AD.svg?&style=for-the-badge&logo=VScode&logoColor=white"/> 
+                                    </td>
+                                  </tr>
+                                  
+                                </tbody>
+                                </table>
+                            <hr>
+                            <div class="title2" id="ref">
+                                레퍼런스 문서(기능설명/인터페이스 문서) 
+                            </div>
+                            
+                            <div id="slideimgs" class="slide_wrap">
+                                <div id="changeImages" class="slider">
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/001.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/002.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/003.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/004.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/005.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/006.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/007.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/007.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/009.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/010.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/011.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/012.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/013.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/014.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/015.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/016.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="title2" id="ref">
+                                레퍼런스 문서(DB 설계서) 
+                            </div>
+                            <div id="slideimgs" class="slide_wrap">
+                                <div id="changeImages" class="slider">
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/017.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/018.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/019.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/020.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/021.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/022.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/023.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/024.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/025.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/026.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/027.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/028.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/029.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="title2" id="ref">
+                                레퍼런스 문서(시퀀스 다이어그램) 
+                            </div>
+                            <div id="slideimgs" class="slide_wrap">
+                                <div id="changeImages" class="slider">
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/030.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/031.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/032.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/033.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/034.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/035.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/036.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/037.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/038.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/039.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/040.png" alt="">
+                                    </div>
+                                    <div class="sliderImg ">
+                                        <img src="/img/투두리스트/041.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
